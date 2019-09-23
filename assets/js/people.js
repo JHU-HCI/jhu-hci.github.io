@@ -42,19 +42,39 @@
     var $people = $('#people');
     console.log("start");
 
-    $.getJSON("data/hci_at_jhu.json?callback=?", function (data) {
+    $.getJSON("data/hci_at_jhu.json", function (data) {
+        console.log("start 2");
         $.each(data, function (key, val) {
             console.log("reading success");
             var out = "";
             if (val.Include == 'Y') {
                 var i;
-                for (i = 0; i < val.length; i++) {
-                    out += '<div class="col-4 col-12-narrower"><h2><strong><a href="http://cs.jhu.edu/~cmhuang">Chien-Ming Huang</a></strong></h2>'
-                        + '</header ><img src="' + val.Photo + '" alt="' + val.Username + '" style="width:100%">'
-                        + '<p><strong>' + val.Position + '</strong><br>'
-                        + '<strong>' + val.Affliation + '</strong><br>'
-                        + val.Area + '</p></section></div>';
+                var photo_path = val.Photo;
+                if (photo_path == '') {
+                    photo_path = 'images/members/avatar.png';
                 };
+                // out += '<div class="col-4 col-12-narrower"><h2><strong><a href="'
+                //     + val.Website + '">' + val.Name + '</a></strong></h2>'
+                //     + '</header ><img src="' + photo_path + '" alt="' + val.Name + '" style="width:100%">'
+                //     + '<p><strong>' + val.Position + '</strong><br>'
+                //     + '<strong>' + val.Affiliation + '</strong><br>'
+                //     + val.Area + '</p></section></div>';
+                out += `<div class="col-4 col-12-narrower">
+						<div class="card">
+							<img src="` + photo_path + `" alt="` + val.Name + `" style="width:100%">
+                            <div class="container">
+                                <a href="` + val.Website + `">
+                                    <h2>` + val.Name + `</h2>
+                                </a>
+                                <p class="position">` + val.Position + `</p>
+                                <p class="affiliation">` + val.Affiliation + `</p>
+                                <a href="mailto:` + val.Username + `">
+                                <p>E-mail: ` + val.Username + `</p>
+                                </a>
+								<p>` + val.Area + `</p>
+							</div>
+						</div>
+					</div>`
                 $(out).appendTo($people);
             };
 
@@ -62,6 +82,4 @@
     }).done(function () {
         console.log("second success");
     });
-
-
 })(jQuery);

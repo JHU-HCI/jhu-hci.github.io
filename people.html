@@ -12,7 +12,76 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		/* Add some shadows to create a card effect */
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651);
+			margin-bottom: 1.0em;
+			/* height: 800px; */
+			/* background-color: rgba(173, 14, 247, 0.151) */
+		}
+
+		div.card img {
+			width: 350px;
+			height: 350px;
+			object-fit: cover;
+			overflow: hidden;
+		}
+
+		/* Some left and right padding inside the container */
+		.container {
+			padding: 10px 20px;
+		}
+
+		div.container p {
+			display: block;
+			margin-top: 0em;
+			margin-bottom: 0.2em;
+			/* margin-left: 0;
+			margin-right: 0; */
+			margin-left: auto;
+			margin-right: auto;
+			overflow: scroll;
+		}
+
+		div.container h2 {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+
+		/* Clear floats */
+		.container::after,
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		p.position {
+			font-weight: bold;
+		}
+
+		p.affiliation {
+			font-weight: bold;
+			font-style: italic;
+		}
+
+		div.container button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 10px 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+	</style>
 </head>
 
 
@@ -22,25 +91,6 @@
 
 		<!-- Header -->
 		<header id="header"></header>
-		<!-- 
-		<script>
-			document.getElementById("header").innerHTML = `
-					<h1 id="logo"><a href="index.html">HCI <span>@Johns Hopkins</span></a></h1>
-					<nav id="nav">
-						<ul>
-							<li class="current"><a href="index.html">Welcome</a></li>
-							<li class="submenu">
-								<a href="#">More</a>
-								<ul>
-									<li><a href="People.html">People</a></li>
-									<li><a href="right-sidebar.html">Courses</a></li>
-									<li><a href="no-sidebar.html">Seminar</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>`;
-		</script> -->
 		<!-- Main -->
 		<article id="main">
 
@@ -68,7 +118,9 @@
 
 			<!-- Two -->
 			<section class="wrapper style1 container special">
-				<div class="row" id="people"></div>
+				<div class="row" id="people">
+
+				</div>
 			</section>
 
 		</article>
