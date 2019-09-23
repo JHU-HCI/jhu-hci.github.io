@@ -29,8 +29,8 @@
 					<a href="#">More</a>
 					<ul>
 						<li><a href="people.html">People</a></li>
-						<li><a href="right-sidebar.html">Courses</a></li>
-						<li><a href="no-sidebar.html">Seminar</a></li>
+						<li><a href="courses.html">Courses</a></li>
+						<li><a href="seminar.html">Seminar</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</li>
