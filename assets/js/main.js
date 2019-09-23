@@ -28,7 +28,7 @@
 				<li class="submenu">
 					<a href="#">More</a>
 					<ul>
-						<li><a href="People.html">People</a></li>
+						<li><a href="people.html">People</a></li>
 						<li><a href="right-sidebar.html">Courses</a></li>
 						<li><a href="no-sidebar.html">Seminar</a></li>
 						<li><a href="contact.html">Contact</a></li>
