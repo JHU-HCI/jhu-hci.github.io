@@ -52,21 +52,24 @@
                 };
                 console.log(photo_path);
                 out += `<div class="col-4 col-12-narrower">
-						<div class="card">
-							<img src="` + photo_path + `" alt="` + val.Name + `" style="width:100%">
-                            <div class="mcontainer">
-                                <a href="` + val.Website + `">
-                                    <h2>` + val.Name + `</h2>
-                                </a>
-                                <p class="position">` + val.Position + `</p>
-                                <p class="affiliation">` + val.Affiliation + `</p>
-                                <a href="mailto:` + val.Username + `">
-                                <p>E-mail: ` + val.Username + `</p>
-                                </a>
-								<p>` + val.Area + `</p>
+							<div class="card">
+								<div class="photo-container">
+									<img src="` + photo_path + `" alt="` + val.Name + `" class="photo" style="width:100%">
+									<div class="middle">
+										<div class="text hyphenation">`+ val.Area + `</div>
+									</div>
+								</div>
+								<div class="text-container">
+									<a href="` + val.Website + `">
+										<h2>` + val.Name + `</h2>
+                                    </a>
+                                    <p><b>`+ val.Position + `</b><br><i>` + val.Affiliation + `</i></p>
+									<a href="mailto:` + val.Username + `">
+										<p>` + val.Username + `</p>
+									</a>
+								</div>
 							</div>
-						</div>
-					</div>`
+						</div>`
                 $(out).appendTo($people);
             };
 

@@ -20,23 +20,17 @@
 		.card {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651);
 			margin-bottom: 1.0em;
-			/* height: 800px; */
+			/* height: 500px; */
 			/* background-color: rgba(173, 14, 247, 0.151) */
-		}
-
-		div.card img {
-			width: 350px;
-			height: 350px;
-			object-fit: cover;
-			overflow: hidden;
+			display: block;
 		}
 
 		/* Some left and right padding inside the container */
-		.mcontainer {
+		.text-container {
 			padding: 10px 20px;
 		}
 
-		div.mcontainer p {
+		div.text-container p {
 			display: block;
 			margin-top: 0em;
 			margin-bottom: 0.2em;
@@ -45,36 +39,120 @@
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
-			/* hyphens: none */
-			word-break: break-all;
-			hyphens: auto;
-			-ms-hyphens: auto;
-			-moz-hyphens: auto;
-			-webkit-hyphens: auto
 		}
 
-		div.mcontainer h2 {
+		div.text-container h2 {
 			margin-top: 0;
 			margin-bottom: 0;
 			text-align: center
 		}
 
 
-		/* Clear floats */
-		.mcontainer::after,
-		.row::after {
-			content: "";
-			clear: both;
-			display: table;
-		}
-
-		p.position {
+		/* p.position {
+			font-size: 16px;
+			margin-top: 0;
+			margin-bottom: 0;
 			font-weight: bold;
 		}
 
 		p.affiliation {
+			font-size: 16px;
+			margin-top: 0;
+			margin-bottom: 0;
 			font-weight: bold;
 			font-style: italic;
+		} */
+
+		.photo-container {
+			position: relative;
+			text-align: center;
+			color: white;
+			width: 100%;
+			/* padding-top: 100%; */
+		}
+
+		div.photo-container img {
+			width: 100%;
+			height: 350px;
+			object-fit: cover;
+			overflow: hidden;
+			opacity: 1;
+			display: block;
+			/* width: 100%;
+			height: auto; */
+			transition: .5s ease;
+			backface-visibility: hidden;
+		}
+
+		div.photo-container .middle {
+			/* width: 350px; */
+			width: 100%;
+			padding-top: 100%;
+			/* object-fit: cover;
+			overflow: hidden; */
+			display: block;
+
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			text-align: center;
+			/* background-color: cyan; */
+			/* overflow: auto; */
+		}
+
+		.hyphenation {
+			word-break: break-all;
+			hyphens: auto;
+			-ms-hyphens: auto;
+			-moz-hyphens: auto;
+			-webkit-hyphens: auto;
+		}
+
+		.middle .text {
+			line-height: 1.5;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: center;
+			width: 90%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+
+			/* background-color: rgb(202, 63, 63); */
+			color: gray;
+			font-size: 32px;
+
+			/* margin-top: 1em;
+			margin-bottom: 1em;
+			margin-left: 0.5em;
+			margin-right: 0.5em; */
+
+		}
+
+		.card:hover .photo {
+			opacity: 0.3;
+		}
+
+		.card:hover .middle {
+			opacity: 1;
+		}
+
+		/* Clear floats */
+		.text-container::after,
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
 		}
 	</style>
 </head>
@@ -109,7 +187,30 @@
 					</section>
 				</div> -->
 					<div class="row" id="people">
-
+						<!-- <div class="col-4 col-12-narrower">
+							<div class="card">
+								<div class="photo-container">
+									<img src="images/members/avatar.png" alt="eeeeeee" class="photo" style="width:100%">
+									<div class="middle">
+										<div class="text hyphenation">
+											blfnafjnjfkablkbajljlljljljweqeqwlelknknlknlnkjnckjnkjjndjnkjsdvkjbvlbvkbdlkbdlbsdkbls
+										</div>
+									</div>
+								</div>
+								<div class="text-container">
+									<a href="http://www.google.com">
+										<h2>ispum</h2>
+									</a>
+									<p><strong>dddd</strong><br>
+										<i>ddddffff</i>
+									</p>
+									<p class="affiliation">jjjj</p>
+									<a href="mailto:a@b.com">
+										<p>E-mail: ddddd</p>
+									</a>
+								</div>
+							</div>
+						</div> -->
 					</div>
 
 			</section>
