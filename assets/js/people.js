@@ -40,25 +40,17 @@
 
 (function ($) {
     var $people = $('#people');
-    console.log("start");
 
-    $.getJSON("data/hci.json", function (data) {
-        console.log("start 2");
+    $.getJSON("data/hci_at_jhu.json", function (data) {
         $.each(data, function (key, val) {
-            console.log("reading success");
             var out = "";
             if (val.Include == 'Y') {
                 var i;
-                var photo_path = val.Photo;
-                if (photo_path == '') {
+                var photo_path = 'images/members/' + val.Picture;
+                if (val.Picture == '') {
                     photo_path = 'images/members/avatar.png';
                 };
-                // out += '<div class="col-4 col-12-narrower"><h2><strong><a href="'
-                //     + val.Website + '">' + val.Name + '</a></strong></h2>'
-                //     + '</header ><img src="' + photo_path + '" alt="' + val.Name + '" style="width:100%">'
-                //     + '<p><strong>' + val.Position + '</strong><br>'
-                //     + '<strong>' + val.Affiliation + '</strong><br>'
-                //     + val.Area + '</p></section></div>';
+                console.log(photo_path);
                 out += `<div class="col-4 col-12-narrower">
 						<div class="card">
 							<img src="` + photo_path + `" alt="` + val.Name + `" style="width:100%">
