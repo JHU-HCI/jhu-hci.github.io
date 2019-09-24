@@ -42,7 +42,7 @@
     var $people = $('#people');
     console.log("start");
 
-    $.getJSON("data/hci_at_jhu.json", function (data) {
+    $.getJSON("data/hci.json", function (data) {
         console.log("start 2");
         $.each(data, function (key, val) {
             console.log("reading success");
@@ -62,7 +62,7 @@
                 out += `<div class="col-4 col-12-narrower">
 						<div class="card">
 							<img src="` + photo_path + `" alt="` + val.Name + `" style="width:100%">
-                            <div class="container">
+                            <div class="mcontainer">
                                 <a href="` + val.Website + `">
                                     <h2>` + val.Name + `</h2>
                                 </a>

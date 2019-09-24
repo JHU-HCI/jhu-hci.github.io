@@ -32,11 +32,11 @@
 		}
 
 		/* Some left and right padding inside the container */
-		.container {
+		.mcontainer {
 			padding: 10px 20px;
 		}
 
-		div.container p {
+		div.mcontainer p {
 			display: block;
 			margin-top: 0em;
 			margin-bottom: 0.2em;
@@ -44,17 +44,24 @@
 			margin-right: 0; */
 			margin-left: auto;
 			margin-right: auto;
-			overflow: scroll;
+			text-align: center;
+			/* hyphens: none */
+			word-break: break-all;
+			hyphens: auto;
+			-ms-hyphens: auto;
+			-moz-hyphens: auto;
+			-webkit-hyphens: auto
 		}
 
-		div.container h2 {
+		div.mcontainer h2 {
 			margin-top: 0;
 			margin-bottom: 0;
+			text-align: center
 		}
 
 
 		/* Clear floats */
-		.container::after,
+		.mcontainer::after,
 		.row::after {
 			content: "";
 			clear: both;
@@ -68,18 +75,6 @@
 		p.affiliation {
 			font-weight: bold;
 			font-style: italic;
-		}
-
-		div.container button {
-			background-color: #4CAF50;
-			/* Green */
-			border: none;
-			color: white;
-			padding: 10px 15px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 16px;
 		}
 	</style>
 </head>
@@ -96,7 +91,7 @@
 
 			<header class="special container">
 				<span class="icon solid fa-users"></span>
-				<h2>And finally there's <strong>No Sidebar</strong></h2>
+				<h2>And finally there's <strong>our members</strong></h2>
 				<p>We are an interdisciplinary group of people caring about technology and people.</p>
 			</header>
 
@@ -105,23 +100,26 @@
 
 				<!-- Content -->
 				<div class="content">
-					<section>
+					<!-- <section>
 						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
 						<header>
 							<h3>Dolore Amet Consequat</h3>
 						</header>
 						<p>some descriptions here...</p>
 					</section>
-				</div>
+				</div> -->
+					<div class="row" id="people">
+
+					</div>
 
 			</section>
 
 			<!-- Two -->
-			<section class="wrapper style1 container special">
+			<!-- <section class="wrapper style1 container special">
 				<div class="row" id="people">
 
 				</div>
-			</section>
+			</section> -->
 
 		</article>
 
