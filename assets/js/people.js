@@ -52,7 +52,7 @@
                 };
                 console.log(photo_path);
                 out += `<div class="col-4 col-12-narrower">
-							<div class="card">
+							<div class="card" >
 								<div class="photo-container">
 									<img src="` + photo_path + `" alt="` + val.Name + `" class="photo" style="width:100%">
 									<div class="middle">
@@ -61,7 +61,7 @@
 								</div>
 								<div class="text-container">
 									<a href="` + val.Website + `">
-										<h2>` + val.Name + `</h2>
+										<h2 id="` + String(val.Name).replace(/ /g, '_') + `">` + val.Name + `</h2>
                                     </a>
                                     <p><b>`+ val.Position + `</b><br><i>` + val.Affiliation + `</i></p>
 									<a href="mailto:` + val.Username + `">
