@@ -64,9 +64,6 @@
 										<h2 id="` + String(val.Name).replace(/ /g, '_') + `">` + val.Name + `</h2>
                                     </a>
                                     <p><b>`+ val.Position + `</b><br><i>` + val.Affiliation + `</i></p>
-									<a href="mailto:` + val.Username + `">
-										<p>` + val.Username + `</p>
-									</a>
 								</div>
 							</div>
 						</div>`
