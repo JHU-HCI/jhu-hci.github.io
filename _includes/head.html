@@ -1,0 +1,10 @@
+<head>
+	<title>{% if page.title and page.title != "Home" %}{{ page.title }} | {% endif %}HCI @ Johns Hopkins</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="{{ page.description | default: site.description }}" />
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+	<link rel="stylesheet" href="{{ '/assets/css/jhu-brand.css' | relative_url }}" />
+	<noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+	{% if page.extra_head %}{{ page.extra_head }}{% endif %}
+</head>

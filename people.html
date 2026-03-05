@@ -1,249 +1,53 @@
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: default
+title: People
+body_class: no-sidebar
+description: "Faculty and researchers in the JHU HCI group"
+---
 
-<head>
-	<title>People | HCI @ Johns Hopkins</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+{% assign faculty    = site.people | where: "section", "faculty"   | sort: "order" %}
+{% assign affiliated = site.people | where: "section", "affiliated" | sort: "order" %}
+{% assign trainees   = site.people | where: "section", "trainee"   | sort: "order" %}
 
-	<style>
-		/* Add some shadows to create a card effect */
-		.card {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.651);
-			margin-bottom: 1.0em;
-			height: 575px;
-			/* background-color: rgba(173, 14, 247, 0.151) */
-			display: block;
-		}
+<article id="main">
 
-		/* Some left and right padding inside the container */
-		.text-container {
-			padding: 10px 20px;
-		}
+	<header class="special container">
+		<span class="icon solid fa-users"></span>
+		<h2>Our <strong>Members</strong></h2>
+		<p>We are an interdisciplinary group of researchers caring about technology and people.</p>
+	</header>
 
-		div.text-container p {
-			display: block;
-			margin-top: 0em;
-			margin-bottom: 0.2em;
-			/* margin-left: 0;
-			margin-right: 0; */
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-		}
+	<section class="wrapper style4 container">
+		<div class="content">
 
-		div.text-container h2 {
-			margin-top: 0;
-			margin-bottom: 0;
-			text-align: center
-		}
-
-		.photo-container {
-			position: relative;
-			text-align: center;
-			color: white;
-			width: 100%;
-			/* padding-top: 100%; */
-		}
-
-		div.photo-container img {
-			width: 100%;
-			height: 350px;
-			object-fit: cover;
-			overflow: hidden;
-			opacity: 1;
-			display: block;
-			/* width: 100%;
-			height: auto; */
-			transition: .5s ease;
-			backface-visibility: hidden;
-		}
-
-		div.photo-container .middle {
-			/* width: 350px; */
-			width: 100%;
-			padding-top: 100%;
-			/* object-fit: cover;
-			overflow: hidden; */
-			display: block;
-
-			transition: .5s ease;
-			opacity: 0;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
-			-moz-transform: translate(-50%, -50%);
-			text-align: center;
-			/* background-color: cyan; */
-			/* overflow: auto; */
-		}
-
-		.hyphenation {
-			word-break: keep-all;
-			/* overflow-wrap: anywhere; */
-			-ms-hyphens: auto;
-			-moz-hyphens: auto;
-			-webkit-hyphens: auto;
-		}
-
-		.middle .text {
-			line-height: 1.5;
-			display: inline-block;
-			vertical-align: middle;
-			text-align: center;
-			width: 100%;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			-ms-transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
-			-moz-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-
-			/* background-color: rgb(202, 63, 63); */
-			color: gray;
-			font-size: 24px;
-			font-weight: 500;
-
-			/* margin-top: 1em;
-			margin-bottom: 1em;
-			margin-left: 0.5em;
-			margin-right: 0.5em; */
-
-		}
-
-		.card:hover .photo {
-			opacity: 0.3;
-		}
-
-		.card:hover .middle {
-			opacity: 1;
-		}
-
-		/* Clear floats */
-		.text-container::after,
-		.row::after {
-			content: "";
-			clear: both;
-			display: table;
-		}
-	</style>
-</head>
-
-
-
-<body class="no-sidebar is-preload">
-	<div id="page-wrapper">
-
-		<!-- Header -->
-		<header id="header"></header>
-		<!-- Main -->
-		<article id="main">
-
-			<header class="special container">
-				<span class="icon solid fa-users"></span>
-				<h2>And there's <strong>our members</strong></h2>
-				<p>We are an interdisciplinary group of people caring about technology and people.</p>
-			</header>
-
-			<!-- One -->
-			<section class="wrapper style4 container">
-
-				<!-- Content -->
-				<div class="content">
-					<!-- <section>
-						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-						<header>
-							<h3>Dolore Amet Consequat</h3>
-						</header>
-						<p>some descriptions here...</p>
-					</section>
-				</div> -->
-					<div class="row" id="people">
-						<!-- <div class="col-4 col-12-narrower">
-							<div class="card">
-								<div class="photo-container">
-									<img src="images/members/avatar.png" alt="eeeeeee" class="photo" style="width:100%">
-									<div class="middle">
-										<div class="text hyphenation">
-											blfnafjnjfkablkbajljlljljljweqeqwlelknknlknlnkjnckjnkjjndjnkjsdvkjbvlbvkbdlkbdlbsdkbls
-										</div>
-									</div>
-								</div>
-								<div class="text-container">
-									<a href="http://www.google.com">
-										<h2>ispum</h2>
-									</a>
-									<p><strong>dddd</strong><br>
-										<i>ddddffff</i>
-									</p>
-									<p class="affiliation">jjjj</p>
-									<a href="mailto:a@b.com">
-										<p>E-mail: ddddd</p>
-									</a>
-								</div>
-							</div>
-						</div> -->
-					</div>
-
-			</section>
-
-			<!-- Two -->
-			<!-- <section class="wrapper style1 container special">
-				<div class="row" id="people">
-
+			{% if faculty.size > 0 %}
+			<div class="people-section">
+				<h2 class="people-section-title">Faculty</h2>
+				<div class="row" id="people-faculty">
+					{% include people_cards.html group=faculty %}
 				</div>
-			</section> -->
+			</div>
+			{% endif %}
 
-		</article>
+			{% if affiliated.size > 0 %}
+			<div class="people-section">
+				<h2 class="people-section-title">Affiliated Faculty</h2>
+				<div class="row" id="people-affiliated">
+					{% include people_cards.html group=affiliated %}
+				</div>
+			</div>
+			{% endif %}
 
-		<!-- Footer -->
-		<footer id="footer">
+			{% if trainees.size > 0 %}
+			<div class="people-section">
+				<h2 class="people-section-title">PhD Students &amp; Postdocs</h2>
+				<div class="row" id="people-trainees">
+					{% include people_cards.html group=trainees %}
+				</div>
+			</div>
+			{% endif %}
 
-			<!-- <ul class="icons">
-				<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-			</ul> -->
+		</div>
+	</section>
 
-			<ul class="copyright">
-				<li>&copy; HCI Group@Johns Hopkins University</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-
-		</footer>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<!-- <script src="assets/js/jquery.scrollgress.min.js"></script> -->
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-
-	<script src="assets/js/people.js"></script>
-
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+</article>

@@ -1,213 +1,32 @@
-<!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: default
+title: Courses
+body_class: no-sidebar
+description: "HCI-related courses offered at Johns Hopkins University"
+---
 
-<head>
-	<title>Courses | HCI @ Johns Hopkins</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-</head>
+<article id="main">
 
-<body class="right-sidebar is-preload">
-	<div id="page-wrapper">
+	<header class="special container">
+		<span class="icon solid fa-book"></span>
+		<h2>HCI <strong>Courses</strong></h2>
+		<p>Human-computer interaction courses offered at Johns Hopkins University</p>
+	</header>
 
-		<!-- Header -->
-		<header id="header"></header>
+	<section class="wrapper style4 container">
+		<div class="col-8 col-12-narrower">
+			<div class="content">
+				{% for course in site.courses %}
+				<section>
+					<header>
+						<h3><a href="{{ course.link }}"><strong>{{ course.number }} {{ course.title }}</strong></a></h3>
+						<p><b>Instructor:</b> <a href="{{ '/people.html#' | append: course.instructor_slug | relative_url }}">{{ course.instructor }}</a></p>
+					</header>
+					{{ course.content }}
+				</section>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
 
-		<!-- Main -->
-		<article id="main">
-
-			<header class="special container">
-				<span class="icon solid fa-book"></span>
-				<h2>Checkout the <strong>Courses</strong></h2>
-				<!-- <p>Where things on the right ... accompany that on the left.</p> -->
-			</header>
-
-			<!-- One -->
-			<section class="wrapper style4 container">
-
-				<!-- <div class="row gtr-150"> -->
-				<div class="col-8 col-12-narrower">
-
-					<!-- Content -->
-					<div class="content">
-						<section>
-							<header>
-								<a href="https://cs.jhu.edu/~joanne/cs290">
-									<h3><strong>EN.601.290 User Interfaces & Mobile Apps</strong></h3>
-								</a>
-								<p><b>Instructor: </b>
-									<a href="people.html#Joanne_Selinski">Joanne Selinski</a> </p>
-							</header>
-							<p>This course will provide students with a rich development experience, focused on the
-								design and implementation of user
-								interfaces and mobile applications. A brief overview of human computer interaction
-								will provide context for designing,
-								prototyping and evaluating user interfaces. Students will invent their own mobile
-								applications and implement them using
-								the Android SDK, which is JAVA based. An overview of the Android platform and
-								available technologies will be provided,
-								as well as XML for layouts, and general concepts for effective mobile development.
-								Students will be expected to explore
-								and experiment with outside resources in order to learn technical details
-								independently. There will also be an emphasis
-								on building teamwork skills, and on using modern development techniques and tools.
-							</p>
-						</section>
-						<section>
-							<!-- <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a> -->
-							<header>
-								<a href="https://engineering.jhu.edu/multidisciplinarydesign/">
-									<h3><strong>EN.500.308 Multidisciplinary Design</strong></h3>
-								</a>
-								<p><b>Instructor: </b>
-									<a href="people.html#Alissa_Murphy">Alissa Murphy</a> </p>
-							</header>
-							<p>In Multidisciplinary Design, teams of students with disparate engineering backgrounds
-								will come together to tackle
-								design challenges for a project partner. While practicing a user-centered design
-								thinking process, teams will understand
-								the essential need behind a problem, prototype solutions, test their prototypes, and
-								present a final solution to their
-								project partner. Students will also learn to collaborate among different working
-								styles, and they will introduce their
-								peers to new skill sets from their engineering discipline.</p>
-						</section>
-						<section>
-							<!-- <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a> -->
-							<header>
-								<a href="https://jhu.semester.ly/course/EN.600.457/Fall/2019">
-									<h3><strong>EN.601.457/657 Computer Graphics</strong></h3>
-								</a>
-								<p><b>Instructor: </b>
-									<a href="people.html#Misha_Kazhdan">Misha Kazhdan</a> </p>
-							</header>
-							<p>This course introduces computer graphics techniques and applications, including image
-								processing, rendering, modeling
-								and animation.</p>
-						</section>
-						<section>
-							<!-- <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a> -->
-							<header>
-								<a href="https://jhu.semester.ly/course/EN.601.490/Fall/2019">
-									<h3><strong>EN.601.490/690 Introduction to Human-Computer Interaction</strong>
-									</h3>
-								</a>
-								<p><b>Instructor: </b>
-									<a href="people.html#Chien-Ming_Huang">Chien-Ming Huang</a> </p>
-							</header>
-							<p>This course is designed to introduce undergraduate and graduate students to design
-								techniques and practices in
-								human-computer interaction (HCI), the study of interactions between humans and
-								computing systems. Students will learn
-								design techniques and evaluation methods, as well as current practices and
-								exploratory approaches, in HCI through
-								lectures, readings, and assignments. Students will practice various design
-								techniques and evaluation methods through
-								hands-on projects focusing on different computing technologies and application
-								domains. This course is intended for
-								undergraduate and graduate students in Computer Science/Cognitive
-								Science/Psychology. Interested students from different
-								disciplines should contact the instructor before enrolling in this course</p>
-						</section>
-						<section>
-							<header>
-								<a href="https://www.cs.jhu.edu/spring20/">
-									<h3><strong>EN.601.486/686 MACHINE LEARNING: ARTIFICIAL INTELLIGENCE SYSTEM DESIGN &
-											DEVELOPMENT</strong></h3>
-								</a>
-								<p><b>Instructor: </b>
-									<a href="people.html#Mathias_Unberath">Mathias Unberath</a> </p>
-							</header>
-							<p>The field of artificial intelligence (AI) has recently seen a substantial increase in
-								popularity, largely fueled by the
-								successes of training deep neural networks that achieve state-of-the-art performance in
-								a large variety of problems.
-								These successes are not limited to academic benchmarks but have started to impact our
-								everyday lives in the form of
-								products such as Google Lens, Amazon Alexa, and Tesla Autopilot. In order for such AI
-								systems to succeed we must
-								consider its impact on everyday life, its overall capabilities and performance, and the
-								effectiveness of the human-AI
-								interaction. The importance of harmonic interplay between all these components is
-								dramatically highlighted by recent
-								catastrophic events in road transport and aviation.
-								In this project-based course you
-								will work in teams of 3-5 students
-								to 1) Identify a need with high-impact implications on everyday life; 2) Conceptualize
-								and design an AI system targeting
-								this need, and 3) Develop the AI system by refining a demo-able prototype based on
-								feedback received during course
-								presentations.</p>
-						</section>
-						<section>
-							<!-- <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a> -->
-							<header>
-								<a href="https://jhu.semester.ly/course/EN.601.491/Spring/2019">
-									<h3><strong>EN.601.491/691
-											HUman-Robot Interaction</strong></h3>
-								</a>
-								<p><b>Instructor: </b>
-									<a href="people.html#Chien-Ming_Huang">Chien-Ming Huang</a> </p>
-
-							</header>
-							<p>This course is designed to introduce advanced students to research methods and topics
-								in human-robot interaction (HRI),
-								an emerging research area focusing on the design and evaluation of interactions
-								between humans and robotic technologies.
-								Students will (1) learn design principles for building and research methods of
-								evaluating interactive robot systems
-								through lectures, readings, and assignments, (2) read and discuss relevant
-								literature to gain sufficient knowledge of
-								various research topics in HRI, and (3) work on a substantial project that
-								integrates the principles, methods, and
-								knowledge learned in this course.</p>
-						</section>
-					</div>
-
-				</div>
-
-
-		</article>
-
-		<!-- Footer -->
-		<footer id="footer">
-
-			<!-- <ul class="icons">
-				<li><a href="#" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon brands circle fa-google-plus-g"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
-				<li><a href="#" class="icon brands circle fa-dribbble"><span class="label">Dribbble</span></a></li>
-			</ul> -->
-
-			<ul class="copyright">
-				<li>&copy; HCI Group@Johns Hopkins University</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-			</ul>
-
-		</footer>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollgress.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+</article>

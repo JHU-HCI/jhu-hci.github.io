@@ -20,22 +20,6 @@
 		mobile: [null, '736px']
 	});
 
-	// unify headers
-	$(`<h1 id = "logo" > <a href="index.html">HCI <span>@Johns Hopkins</span></a></h1 >
-		<nav id="nav">
-			<ul>
-				<li class="current"><a href="index.html">Welcome</a></li>
-				<li class="submenu">
-					<a href="#">More</a>
-					<ul>
-						<li><a href="people.html">People</a></li>
-						<li><a href="courses.html">Courses</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>`).appendTo($header);
-
 	// Play initial animations on page load.
 	$window.on('load', function () {
 		window.setTimeout(function () {

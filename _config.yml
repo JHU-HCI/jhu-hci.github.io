@@ -1,0 +1,34 @@
+title: "HCI @ Johns Hopkins University"
+description: "Placing People at the Center of Technological Innovation"
+url: "https://hci.jhu.edu"
+baseurl: ""
+
+# Collections
+collections:
+  people:
+    output: false
+    sort_by: order
+  courses:
+    output: false
+    sort_by: order
+  seminars:
+    output: false
+    sort_by: order
+
+# Build settings
+markdown: kramdown
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.txt
+  - LICENSE.txt
+  - assets/sass/
+  - left-sidebar.html
+  - right-sidebar.html
+  - no-sidebar.html
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
