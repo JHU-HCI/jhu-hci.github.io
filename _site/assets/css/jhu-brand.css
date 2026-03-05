@@ -1,0 +1,705 @@
+/*
+ * JHU Brand Overrides
+ * Johns Hopkins University — HCI Group
+ *
+ * Primary:   Heritage Blue  #002D72
+ * Secondary: Spirit Blue    #68ACE5
+ * Accent:    JHU Red        #CF4520
+ * Neutral:   Light bg       #f5f7fa
+ *
+ * Typography (open-source per JHU web guidelines):
+ *   Work Sans  — body, UI, navigation
+ *   Roboto Slab — display headings
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Roboto+Slab:wght@400;700&display=swap');
+
+/* ==========================================
+   Custom Properties
+   ========================================== */
+
+:root {
+	--jhu-heritage-blue: #002D72;
+	--jhu-spirit-blue:   #68ACE5;
+	--jhu-dark-blue:     #001a45;
+	--jhu-red:           #CF4520;
+	--jhu-yellow:        #F1C400;
+	--jhu-text:          #2d2d2d;
+	--jhu-light-bg:      #f5f7fa;
+	--jhu-mid-bg:        #e8edf5;
+}
+
+/* ==========================================
+   Typography
+   ========================================== */
+
+body,
+input,
+select,
+textarea {
+	font-family: 'Work Sans', 'Lato', sans-serif;
+	color: var(--jhu-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', 'Lato', serif;
+	font-weight: 700;
+	color: var(--jhu-heritage-blue);
+}
+
+/* ==========================================
+   Links
+   ========================================== */
+
+a {
+	color: var(--jhu-heritage-blue);
+	border-bottom-color: rgba(0, 45, 114, 0.25);
+}
+
+a:hover {
+	color: var(--jhu-spirit-blue);
+	border-bottom-color: var(--jhu-spirit-blue);
+}
+
+/* ==========================================
+   Header / Navigation
+   ========================================== */
+
+#header {
+	background-color: var(--jhu-heritage-blue);
+	border-bottom: 3px solid var(--jhu-spirit-blue);
+}
+
+/* Logo — shield + unit name */
+#header h1#logo {
+	display: flex;
+	align-items: center;
+	gap: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+
+#header h1#logo .shield-link {
+	display: flex;
+	align-items: center;
+	border: none;
+	flex-shrink: 0;
+}
+
+#header h1#logo .jhu-shield {
+	height: 46px;
+	width: auto;
+	display: block;
+	mix-blend-mode: screen;
+}
+
+#header h1#logo .logo-divider {
+	display: block;
+	width: 1px;
+	height: 30px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin: 0 0.9em;
+	flex-shrink: 0;
+}
+
+#header h1#logo .unit-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: none;
+	gap: 0.15em;
+}
+
+#header h1#logo .unit-name {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 0.95em;
+	color: #ffffff;
+	letter-spacing: 0.01em;
+	line-height: 1.2;
+	white-space: nowrap;
+}
+
+#header h1#logo .unit-sub {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 0.65em;
+	color: var(--jhu-spirit-blue);
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+#header h1#logo .unit-link:hover .unit-name {
+	color: var(--jhu-spirit-blue);
+}
+
+/* Alt header variant (transparent over banner) */
+#header.alt h1#logo .unit-name {
+	color: #ffffff;
+}
+
+#header.alt h1#logo .logo-divider {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Top-level nav links */
+#header nav#nav > ul > li > a {
+	color: rgba(255, 255, 255, 0.85);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	font-size: 0.82em;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	border: none;
+}
+
+#header nav#nav > ul > li > a:hover,
+#header nav#nav > ul > li.current > a {
+	color: #ffffff;
+}
+
+#header nav#nav > ul > li.current > a {
+	border-bottom: 2px solid var(--jhu-spirit-blue);
+}
+
+/* Dropdown menu */
+#header nav#nav > ul > li > ul {
+	background-color: var(--jhu-heritage-blue);
+	border: 1px solid rgba(104, 172, 229, 0.35);
+	border-radius: 2px;
+}
+
+#header nav#nav > ul > li > ul li a {
+	color: rgba(255, 255, 255, 0.8);
+	font-family: 'Work Sans', sans-serif;
+	font-size: 0.85em;
+	border: none;
+}
+
+#header nav#nav > ul > li > ul li a:hover {
+	color: var(--jhu-spirit-blue);
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Transparent header over banner (homepage) */
+#header.alt {
+	background: linear-gradient(to bottom, rgba(0, 45, 114, 0.75) 0%, rgba(0, 45, 114, 0.0) 100%);
+	border-bottom-color: transparent;
+}
+
+#header.alt nav#nav > ul > li > a {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* ==========================================
+   Banner (Hero)
+   ========================================== */
+
+#banner {
+	background-color: var(--jhu-heritage-blue);
+	background-image: url('../images/banner-jhu.jpg');
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+}
+
+#banner .inner header h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	color: #ffffff;
+	text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+#banner .inner > p {
+	color: var(--jhu-spirit-blue);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+#banner .buttons .button {
+	border-color: rgba(255, 255, 255, 0.65);
+	color: #ffffff;
+	background-color: transparent;
+}
+
+#banner .buttons .button:hover {
+	background-color: var(--jhu-spirit-blue);
+	border-color: var(--jhu-spirit-blue);
+	color: #ffffff;
+}
+
+/* ==========================================
+   Buttons
+   ========================================== */
+
+.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	border-color: var(--jhu-heritage-blue);
+	color: var(--jhu-heritage-blue);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+	background-color: var(--jhu-heritage-blue);
+	border-color: var(--jhu-heritage-blue);
+	color: #ffffff;
+}
+
+.button.primary,
+input[type="submit"].special,
+.button.special {
+	background-color: var(--jhu-heritage-blue);
+	border-color: var(--jhu-heritage-blue);
+	color: #ffffff;
+}
+
+.button.primary:hover,
+input[type="submit"].special:hover,
+.button.special:hover {
+	background-color: var(--jhu-spirit-blue);
+	border-color: var(--jhu-spirit-blue);
+}
+
+/* ==========================================
+   Article / Page Header (icon + title block)
+   ========================================== */
+
+article#main > header.special.container {
+	background-color: var(--jhu-heritage-blue);
+	color: #ffffff;
+}
+
+article#main > header.special.container h2 {
+	color: #ffffff;
+	font-family: 'Roboto Slab', serif;
+}
+
+article#main > header.special.container p {
+	color: var(--jhu-spirit-blue);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+}
+
+article#main > header.special.container .icon {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================
+   Section Wrappers
+   ========================================== */
+
+/* White wrapper */
+.wrapper.style4 {
+	background-color: #ffffff;
+}
+
+/* Light bg wrapper */
+.wrapper.style2 {
+	background-color: var(--jhu-light-bg);
+	background-image: none;
+	color: var(--jhu-text);
+}
+
+.wrapper.style2 h2,
+.wrapper.style2 h3 {
+	color: var(--jhu-heritage-blue);
+}
+
+.wrapper.style2 p {
+	color: var(--jhu-text);
+}
+
+/* Heritage Blue wrapper */
+.wrapper.style3 {
+	background-color: var(--jhu-heritage-blue);
+}
+
+.wrapper.style3 h2,
+.wrapper.style3 h3 {
+	color: #ffffff;
+}
+
+.wrapper.style3 p {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.wrapper.style3 a {
+	color: var(--jhu-spirit-blue);
+	border-bottom-color: rgba(104, 172, 229, 0.35);
+}
+
+.wrapper.style3 a:hover {
+	color: #ffffff;
+	border-bottom-color: #ffffff;
+}
+
+.wrapper.style3 header.major h2 {
+	color: #ffffff;
+	border-bottom-color: var(--jhu-spirit-blue);
+}
+
+.wrapper.style3 header.major h2:after {
+	background: var(--jhu-spirit-blue);
+}
+
+/* ==========================================
+   CTA Section
+   ========================================== */
+
+#cta {
+	background-color: var(--jhu-heritage-blue);
+	background-image: none;
+}
+
+#cta header h2 {
+	color: #ffffff;
+	font-family: 'Roboto Slab', serif;
+}
+
+#cta header h2 strong {
+	color: var(--jhu-spirit-blue);
+}
+
+#cta .button {
+	border-color: rgba(255, 255, 255, 0.6);
+	color: #ffffff;
+	background-color: transparent;
+}
+
+#cta .button:hover {
+	background-color: var(--jhu-spirit-blue);
+	border-color: var(--jhu-spirit-blue);
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+
+#footer {
+	background-color: var(--jhu-dark-blue);
+	color: rgba(255, 255, 255, 0.5);
+	border-top: 3px solid var(--jhu-heritage-blue);
+}
+
+.footer-brand {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.footer-jhu-name {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+	font-size: 0.9em;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--jhu-spirit-blue);
+}
+
+#footer .copyright {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+#footer .copyright li {
+	color: rgba(255, 255, 255, 0.4);
+	border-left-color: rgba(255, 255, 255, 0.15);
+}
+
+#footer .copyright li a {
+	color: var(--jhu-spirit-blue);
+	border-bottom-color: transparent;
+}
+
+#footer .copyright li a:hover {
+	color: #ffffff;
+}
+
+/* ==========================================
+   People Sections
+   ========================================== */
+
+.people-section {
+	margin-bottom: 3em;
+}
+
+.people-section-title {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+	color: var(--jhu-heritage-blue);
+	border-bottom: 2px solid var(--jhu-spirit-blue);
+	padding-bottom: 0.4em;
+	margin-bottom: 1.5em;
+}
+
+/* ==========================================
+   People Cards
+   ========================================== */
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 1.0em;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border-top: 3px solid var(--jhu-heritage-blue);
+	background-color: #ffffff;
+}
+
+#people {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+#people > div {
+	display: flex;
+	float: none;
+}
+
+.text-container {
+	padding: 10px 20px;
+}
+
+.text-container p {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0.2em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.text-container h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	color: var(--jhu-heritage-blue);
+	font-family: 'Roboto Slab', serif;
+	font-size: 0.75em;
+}
+
+.text-container a {
+	border: none;
+}
+
+.text-container a:hover h2 {
+	color: var(--jhu-spirit-blue);
+}
+
+.photo-container {
+	position: relative;
+	text-align: center;
+	color: white;
+	width: 100%;
+}
+
+.photo-container img {
+	width: 100%;
+	height: 175px;
+	object-fit: cover;
+	overflow: hidden;
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.photo-container .middle {
+	width: 100%;
+	padding-top: 100%;
+	display: block;
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.hyphenation {
+	word-break: keep-all;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.middle .text {
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.card:hover .photo {
+	opacity: 0.3;
+}
+
+.card:hover .middle {
+	opacity: 1;
+	background-color: rgba(0, 45, 114, 0.85);
+}
+
+.text-container::after,
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* ==========================================
+   Course Listings
+   ========================================== */
+
+.content section header h3 strong a,
+.content section header h3 a {
+	color: var(--jhu-heritage-blue);
+	border: none;
+}
+
+.content section header h3 strong a:hover,
+.content section header h3 a:hover {
+	color: var(--jhu-spirit-blue);
+}
+
+.content section {
+	border-bottom: 1px solid var(--jhu-mid-bg);
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+}
+
+.content section:last-child {
+	border-bottom: none;
+}
+
+/* ==========================================
+   Seminar Speakers
+   ========================================== */
+
+.speaker-pic {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	object-position: top center;
+	float: left;
+	margin: 0 1.5em 1em 0;
+	border: 3px solid var(--jhu-spirit-blue);
+	border-radius: 2px;
+	display: block;
+}
+
+/* ==========================================
+   Mobile Nav Panel
+   ========================================== */
+
+#navPanel {
+	background-color: var(--jhu-heritage-blue);
+	border-right: 2px solid var(--jhu-spirit-blue);
+}
+
+#navPanel .link {
+	color: rgba(255, 255, 255, 0.75);
+	border-top-color: rgba(255, 255, 255, 0.08);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-size: 0.85em;
+}
+
+#navPanel .link:hover {
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+#navPanel .link.depth-0 {
+	color: #ffffff;
+}
+
+#navButton .toggle {
+	background-color: var(--jhu-heritage-blue);
+}
+
+/* ==========================================
+   Feature Section (center cards)
+   ========================================== */
+
+.wrapper.style3 section .image.featured {
+	margin-bottom: 1.5em;
+}
+
+.wrapper.style3 section .image.featured img {
+	border-bottom: 3px solid var(--jhu-spirit-blue);
+}
+
+.wrapper.style3 header h3 {
+	color: #ffffff;
+}
+
+.wrapper.style3 header h3 a {
+	color: var(--jhu-spirit-blue);
+	border: none;
+}
+
+.wrapper.style3 header h3 a:hover {
+	color: #ffffff;
+}
+
+/* ==========================================
+   Vision / Intro Section
+   ========================================== */
+
+.wrapper.style2 header h2 a,
+.wrapper.style2 h2.center a {
+	color: var(--jhu-heritage-blue);
+	border: none;
+}
+
+.wrapper.style2 header h2 a:hover,
+.wrapper.style2 h2.center a:hover {
+	color: var(--jhu-spirit-blue);
+}
+
+/* ==========================================
+   Form Elements
+   ========================================== */
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+	border-color: rgba(0, 45, 114, 0.25);
+	font-family: 'Work Sans', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+	border-color: var(--jhu-spirit-blue);
+	box-shadow: 0 0 0 2px rgba(104, 172, 229, 0.2);
+}

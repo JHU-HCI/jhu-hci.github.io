@@ -306,11 +306,17 @@ article#main > header.special.container .icon {
 /* Light bg wrapper */
 .wrapper.style2 {
 	background-color: var(--jhu-light-bg);
+	background-image: none;
+	color: var(--jhu-text);
 }
 
 .wrapper.style2 h2,
 .wrapper.style2 h3 {
 	color: var(--jhu-heritage-blue);
+}
+
+.wrapper.style2 p {
+	color: var(--jhu-text);
 }
 
 /* Heritage Blue wrapper */

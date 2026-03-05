@@ -5,6 +5,6 @@ affiliation: Johns Hopkins School of Medicine
 website: https://pages.jh.edu/~coverby1
 picture: taylor.jpg
 area: Informatics
-section: affiliated
+section: faculty
 order: 8
 ---

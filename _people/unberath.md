@@ -5,6 +5,6 @@ affiliation: LCSR / Computer Science
 website: https://mathiasunberath.github.io/
 picture: unberath.png
 area: Human AI interaction; Augmented reality; Visualization; User interface design
-section: affiliated
+section: faculty
 order: 9
 ---
