@@ -704,3 +704,149 @@ textarea:focus {
 	border-color: var(--jhu-spirit-blue);
 	box-shadow: 0 0 0 2px rgba(104, 172, 229, 0.2);
 }
+
+/* ==========================================
+   Publications / Research Page
+   ========================================== */
+
+.pub-list {
+	max-width: 860px;
+}
+
+.pub-year-group {
+	margin-bottom: 3em;
+}
+
+.pub-year-heading {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4em;
+	color: var(--jhu-heritage-blue);
+	border-bottom: 2px solid var(--jhu-spirit-blue);
+	padding-bottom: 0.35em;
+	margin-bottom: 1.5em;
+}
+
+.pub-entry {
+	display: flex;
+	gap: 1.25em;
+	margin-bottom: 1.75em;
+	padding-bottom: 1.75em;
+	border-bottom: 1px solid var(--jhu-mid-bg);
+	align-items: flex-start;
+}
+
+.pub-entry:last-child {
+	border-bottom: none;
+}
+
+.pub-thumbnail {
+	flex-shrink: 0;
+	width: 120px;
+}
+
+.pub-thumbnail img {
+	width: 120px;
+	height: 90px;
+	object-fit: cover;
+	border: 1px solid var(--jhu-mid-bg);
+	border-radius: 2px;
+	display: block;
+}
+
+.pub-details {
+	flex: 1;
+}
+
+.pub-details p {
+	margin: 0 0 0.3em 0;
+}
+
+.pub-title {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	color: var(--jhu-text);
+	line-height: 1.4;
+}
+
+.pub-title a {
+	color: var(--jhu-heritage-blue);
+	border: none;
+	font-weight: 600;
+}
+
+.pub-title a:hover {
+	color: var(--jhu-spirit-blue);
+}
+
+.pub-award {
+	display: inline-block;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 0.72em;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: var(--jhu-red);
+	padding: 0.15em 0.5em;
+	border-radius: 2px;
+	margin-left: 0.5em;
+	vertical-align: middle;
+}
+
+.pub-authors {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 0.9em;
+	color: #555;
+	font-style: italic;
+}
+
+.pub-venue {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 0.88em;
+	font-weight: 600;
+	color: var(--jhu-spirit-blue);
+}
+
+.pub-links {
+	margin-top: 0.4em !important;
+}
+
+.pub-link-btn {
+	display: inline-block;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 0.75em;
+	font-weight: 700;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: var(--jhu-heritage-blue);
+	border: 1px solid var(--jhu-heritage-blue) !important;
+	padding: 0.2em 0.65em;
+	border-radius: 2px;
+	margin-right: 0.4em;
+	text-decoration: none;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.pub-link-btn:hover {
+	background-color: var(--jhu-heritage-blue);
+	color: #ffffff !important;
+	border-bottom: 1px solid var(--jhu-heritage-blue) !important;
+}
+
+/* Social icon circles */
+.social-icons li {
+	vertical-align: middle;
+}
+
+/* Bluesky — SVG-based circle, matching template's .icon.circle style */
+.icon.circle.bsky-circle {
+	background: #0085ff;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon.circle.bsky-circle:hover {
+	background: #006ecc;
+}

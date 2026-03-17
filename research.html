@@ -1,0 +1,52 @@
+---
+layout: default
+title: Research
+body_class: no-sidebar
+description: "Publications from the JHU HCI research group"
+---
+
+{% assign sorted_pubs = site.data.publications | sort: "year" | reverse %}
+{% assign years = sorted_pubs | map: "year" | uniq %}
+
+<article id="main">
+
+	<section class="wrapper style4 container">
+		<div class="content pub-list">
+
+			{% for year in years %}
+			{% assign year_pubs = sorted_pubs | where: "year", year %}
+
+			<div class="pub-year-group">
+				<h2 class="pub-year-heading">{{ year }}</h2>
+
+				{% for pub in year_pubs %}
+				<div class="pub-entry">
+					{% if pub.thumbnail %}
+					<div class="pub-thumbnail">
+						<img src="{{ pub.thumbnail | relative_url }}" alt="Thumbnail for {{ pub.title }}">
+					</div>
+					{% endif %}
+					<div class="pub-details">
+						<p class="pub-title">
+							{% if pub.url %}
+							<a href="{{ pub.url }}">{{ pub.title }}</a>
+							{% else %}
+							{{ pub.title }}
+							{% endif %}
+							{% if pub.award %}
+							<span class="pub-award">{{ pub.award }}</span>
+							{% endif %}
+						</p>
+						<p class="pub-authors">{{ pub.authors }}</p>
+						<p class="pub-venue">{{ pub.venue }}</p>
+						{% if pub.pdf %}<p class="pub-links"><a href="{{ pub.pdf }}" class="pub-link-btn">PDF</a></p>{% endif %}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			{% endfor %}
+
+		</div>
+	</section>
+
+</article>

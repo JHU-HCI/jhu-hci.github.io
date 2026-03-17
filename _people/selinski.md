@@ -5,6 +5,6 @@ affiliation: Computer Science
 website: https://cs.jhu.edu/~joanne
 picture: selinski.jpg
 area: CS Education; User interface design; Interaction design
-section: faculty
+section: affiliated
 order: 7
 ---

@@ -5,6 +5,6 @@ affiliation: Computer Science
 website: https://www.cs.jhu.edu/~misha
 picture: kazhdan.jpg
 area: Graphics
-section: faculty
+section: affiliated
 order: 4
 ---

@@ -5,6 +5,6 @@ affiliation: Mechanical Engineering
 website: https://engineering.jhu.edu/multidisciplinarydesign/
 picture: murphy.jpg
 area: Teaching design thinking through multidisciplinary design projects
-section: faculty
+section: affiliated
 order: 6
 ---

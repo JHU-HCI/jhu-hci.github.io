@@ -1,0 +1,708 @@
+# Publications — JHU HCI Group
+# Sources: ziangxiao.com, cs.jhu.edu/~cmhuang, cs.jhu.edu/~yaxing, piccardi.me
+# Fields: title, authors, venue, year, url (optional), pdf (optional), award (optional)
+
+# ─── 2026 ─────────────────────────────────────────────────────────────────────
+
+- title: "Value Alignment of Social Media Ranking Algorithms"
+  authors: "Farnaz Jahanbakhsh, Dora Zhao, Tiziano Piccardi, Zachary Robertson, Ziv Epstein, Sanmi Koyejo, Michael S. Bernstein"
+  venue: "CHI 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2509.14434"
+
+- title: "Social Media Feed Elicitation"
+  authors: "Lindsay Popowski, Xiyuan Wu, Xuyang Zhu, Tiziano Piccardi, Michael S. Bernstein"
+  venue: "CHI 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2602.18594"
+
+- title: "Alexandria: A Library of Pluralistic Values for Realtime Re-Ranking of Social Media Feeds"
+  authors: "Akaash Kolluri, Renn Su, Farnaz Jahanbakhsh, Dora Zhao, Tiziano Piccardi, Michael S. Bernstein"
+  venue: "ICWSM 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2505.10839"
+
+- title: "Web2Wiki: Characterizing Wikipedia Linking Across the Web"
+  authors: "Veniamin Veselovsky, Tiziano Piccardi, Ashton Anderson, Robert West, Akhil Arora"
+  venue: "ICWSM 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2505.15837"
+
+- title: "Reranking Social Media Feeds: A Practical Guide for Field Experiments"
+  authors: "Tiziano Piccardi, Martin Saveski, Chenyan Jia, Jeffrey Hancock, Jeanne L. Tsai, Michael S. Bernstein"
+  venue: "ACM Transactions on Social Computing"
+  year: 2026
+  url: "https://arxiv.org/abs/2406.19571"
+
+- title: "Generative Personality Simulation via Theory-Informed Structured Interview"
+  authors: "Pengda Wang, Huiqi Zou, Han Jiang, Hanjie Chen, Tianjun Sun, Xiaoyuan Yi, Ziang Xiao, Frederick L. Oswald"
+  venue: "EACL 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2502.12109"
+
+- title: "Plant-Inspired Robot Design Metaphors for Ambient HRI"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2026"
+  year: 2026
+  url: "https://arxiv.org/pdf/2601.22387"
+
+# ─── 2025 ─────────────────────────────────────────────────────────────────────
+
+- title: "Reranking Partisan Animosity in Algorithmic Social Media Feeds Alters Affective Polarization"
+  authors: "Tiziano Piccardi, Martin Saveski, Chenyan Jia, Jeffrey Hancock, Jeanne L. Tsai, Michael S. Bernstein"
+  venue: "Science"
+  year: 2025
+  url: "https://www.science.org/doi/10.1126/science.adu5584"
+
+- title: "Burst: Collaborative Curation in Connected Social Media Communities"
+  authors: "Yutong Zhang, Taeuk Kang, Sydney Yeh, Anavi Baddepudi, Lindsay Popowski, Tiziano Piccardi, Michael S. Bernstein"
+  venue: "CSCW 2025"
+  year: 2025
+  url: "https://arxiv.org/abs/2508.19768"
+
+- title: "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing"
+  authors: "Han Jiang, Xiaoyuan Yi, Zhihua Wei, Ziang Xiao, Shu Wang, Xing Xie"
+  venue: "ICML 2025"
+  year: 2025
+  url: "https://arxiv.org/abs/2406.14230"
+
+- title: "Can LLM Self-report? Evaluating the Validity of Self-report Scales in Measuring Personality Design in LLM-based Chatbots"
+  authors: "Huiqi Zou, Pengda Wang, Zihan Yan, Tianjun Sun, Ziang Xiao"
+  venue: "CoLM 2025"
+  year: 2025
+  url: "https://arxiv.org/abs/2412.00207"
+
+- title: "From Queries to Criteria: Understanding How Astronomers Evaluate LLMs"
+  authors: "Alina Hyk, Kiera McCormick, Mian Zhong, Ioana Ciucă, Sanjib Sharma, John F Wu, JEG Peek, Kartheik G Iyer, Ziang Xiao, Anjalie Field"
+  venue: "CoLM 2025"
+  year: 2025
+  url: "https://arxiv.org/abs/2507.15715"
+
+- title: "Interruption Handling for Conversational Robots"
+  authors: "Shiye Cao, Jiwon Moon, Amama Mahmood, Victor Nikhil Antony, Ziang Xiao, Anqi Liu, Chien-Ming Huang"
+  venue: "RSS 2025"
+  year: 2025
+  url: "https://arxiv.org/pdf/2501.01568"
+
+- title: "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models"
+  authors: "Nikhil Sharma, Keton Murray, Ziang Xiao"
+  venue: "NAACL 2025"
+  year: 2025
+  url: "https://arxiv.org/abs/2407.05502"
+
+- title: "Canvil: Designerly Adaptation for LLM-Powered User Experiences"
+  authors: "Kevin Feng, Q. Vera Liao, Ziang Xiao, Jennifer Wortman Vaughan, Amy X. Zhang, David W. McDonald"
+  venue: "CHI 2025"
+  year: 2025
+  url: "https://arxiv.org/abs/2401.09051"
+
+- title: "From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis"
+  authors: "Zhuoyan Li, Hangxiao Zhu, Zhuoran Lu, Ziang Xiao, Ming Yin"
+  venue: "CHI 2025"
+  year: 2025
+  url: "https://dl.acm.org/doi/10.1145/3706598.3713133"
+
+- title: "Understanding the LLM-ification of CHI: Unpacking the Impact of LLMs at CHI through a Systematic Literature Review"
+  authors: "Rock Yuren Pang, Hope Schroeder, Kynnedy Simone Smith, Solon Barocas, Ziang Xiao, Emily Tseng, Danielle Bragg"
+  venue: "CHI 2025"
+  year: 2025
+  url: "https://dl.acm.org/doi/10.1145/3706598.3713726"
+
+- title: "Assistance or Disruption? Exploring and Evaluating the Design and Trade-offs of Proactive AI Programming Support"
+  authors: "Kevin Pu, Daniel Lazaro, Ian Arawjo, Haijun Xia, Ziang Xiao, Tovi Grossman, Yan Chen"
+  venue: "CHI 2025"
+  year: 2025
+
+- title: "\"See You Later, Alligator\": Impacts of Robot Small Talk on Task, Rapport, and Interaction Dynamics in Human-Robot Collaboration"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2025"
+  year: 2025
+  url: "https://arxiv.org/pdf/2501.13233"
+  award: "Best Paper Honorable Mention"
+
+- title: "Voice Assistants for Health Self-Management: Designing for and with Older Adults"
+  authors: "Chien-Ming Huang et al."
+  venue: "CHI 2025"
+  year: 2025
+  url: "https://arxiv.org/pdf/2409.15488"
+
+- title: "Xpress: Generating Dynamic, Context-Aware Robot Facial Expressions Using Language Models"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2025"
+  year: 2025
+  url: "https://arxiv.org/pdf/2503.00283"
+
+- title: "The Design of On-Body Robots for Older Adults"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2025"
+  year: 2025
+  url: "https://arxiv.org/pdf/2502.02725"
+
+- title: "Behind the Same Mask: Understanding the Practice of Spontaneous Collective Anonymity on Chinese Social Platforms"
+  authors: "Suqi Lou, Weijun Li, Chao Zhang, Sen Chen, Zhicong Lu, Yaxing Yao"
+  venue: "CSCW 2025"
+  year: 2025
+
+- title: "How Social Media Plays A Role in Stay-At-Home-Mom's Transition: A Case Study in China"
+  authors: "Xinyi Zhang, Minzhu Zhao, Yaxing Yao, Zhicong Lu"
+  venue: "CSCW 2025"
+  year: 2025
+
+- title: "\"If we had the Option\": Infrastructuring for Access to Online Subscription-Based Services in Bangladesh"
+  authors: "Hasan Prottoy, Yaxing Yao, Foad Hamidi"
+  venue: "CSCW 2025"
+  year: 2025
+
+- title: "\"What are they gonna do with my data?\": Privacy Expectations, Concerns, and Behaviors in Virtual Reality"
+  authors: "Abhinaya S.B., Abhishri Agrawal, Yaxing Yao, Yixin Zou, Anupam Das"
+  venue: "PoPETS 2025"
+  year: 2025
+
+- title: "Trauma Narratives and Healing of Offspring Caregivers of Breast Cancer Patients: a Mixed Qualitative Methods Study"
+  authors: "Yifan Zhao, Xueli Qiu, Ziang Xiao, Michelle R Kaufman"
+  venue: "BMC Psychology"
+  year: 2025
+  url: "https://link.springer.com/article/10.1186/s40359-025-03854-y"
+
+# ─── 2024 ─────────────────────────────────────────────────────────────────────
+
+- title: "Generative Echo Chamber? Effect of LLM-Powered Search Systems on Diverse Information Seeking"
+  authors: "Nikhil Sharma, Q. Vera Liao, Ziang Xiao"
+  venue: "CHI 2024"
+  year: 2024
+  url: "https://dl.acm.org/doi/10.1145/3613904.3642459"
+  award: "Best Paper"
+
+- title: "ECBD: Evidence-Centered Benchmark Design for NLP"
+  authors: "Yu Lu Liu, Su Lin Blodgett, Jackie Chi Kit Cheung, Q. Vera Liao, Alexandra Olteanu, Ziang Xiao"
+  venue: "ACL 2024"
+  year: 2024
+  url: "https://aclanthology.org/2024.acl-long.861/"
+
+- title: "Can Language Models Serve as Text-Based World Simulators?"
+  authors: "Ruoyao Wang, Graham Todd, Ziang Xiao, Xingdi Yuan, Marc-Alexandre Côté, Peter Clark, Peter Jansen"
+  venue: "ACL 2024"
+  year: 2024
+
+- title: "Improving Context-Aware Preference Modeling for Language Models"
+  authors: "Silviu Pitis, Ziang Xiao, Nicolas Le Roux, Alessandro Sordoni"
+  venue: "NeurIPS 2024"
+  year: 2024
+  url: "https://arxiv.org/abs/2407.14916"
+
+- title: "In-class Data Analysis Replications: Teaching Students while Testing Science"
+  authors: "Kristina Gligoric, Tiziano Piccardi, Jake Hofman, Robert West"
+  venue: "Harvard Data Science Review"
+  year: 2024
+  url: "https://arxiv.org/abs/2308.16491"
+
+- title: "AnthroScore: A Computational Linguistic Measure of Anthropomorphism"
+  authors: "Myra Cheng, Kristina Gligoric, Tiziano Piccardi, Dan Jurafsky"
+  venue: "EACL 2024"
+  year: 2024
+  url: "https://arxiv.org/abs/2402.02056"
+
+- title: "Curious Rhythms: Temporal Regularities of Wikipedia Consumption"
+  authors: "Tiziano Piccardi, Martin Gerlach, Robert West"
+  venue: "ICWSM 2024"
+  year: 2024
+  url: "https://arxiv.org/abs/2305.09497"
+
+- title: "Care to Explain? AI Explanation Types Differentially Impact Physician Diagnostic Performance and Trust in AI"
+  authors: "Chien-Ming Huang et al."
+  venue: "Radiology"
+  year: 2024
+  url: "https://pubs.rsna.org/doi/full/10.1148/radiol.233261"
+
+- title: "Designing for Appropriate Reliance: The Roles of AI Uncertainty Presentation, Initial User Decision, and User Demographics in AI-Assisted Decision-Making"
+  authors: "Chien-Ming Huang et al."
+  venue: "CSCW 2024"
+  year: 2024
+  url: "https://dl.acm.org/doi/pdf/10.1145/3637318"
+
+- title: "Gender Biases in Error Mitigation by Voice Assistants"
+  authors: "Chien-Ming Huang et al."
+  venue: "CSCW 2024"
+  year: 2024
+  url: "https://arxiv.org/pdf/2310.13074.pdf"
+
+- title: "Alchemist: LLM-Aided End-User Development of Robot Applications"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2024"
+  year: 2024
+  url: "https://dl.acm.org/doi/pdf/10.1145/3610977.3634969"
+
+- title: "Reducing Performance Variability and Overcoming Limited Spatial Ability: Targeted Training for Remote Robot Teleoperation"
+  authors: "Chien-Ming Huang et al."
+  venue: "IROS 2024"
+  year: 2024
+
+- title: "Users' Perceptions of Online Child Abuse Detection Mechanisms"
+  authors: "Elmira Deldari, Parth Thakkar, Yaxing Yao"
+  venue: "CSCW 2024"
+  year: 2024
+
+- title: "Understanding Chinese Internet Users' Perceptions of, and Online Platforms' Compliance with, the Personal Information Protection Law (PIPL)"
+  authors: "Mo Zhou, Zhiyan Qu, Jinhan Wan, Bo Wen, Yaxing Yao, Zhicong Lu"
+  venue: "CSCW 2024"
+  year: 2024
+
+- title: "From Awareness to Action: Exploring End-User Empowerment Interventions for Dark Patterns in UX"
+  authors: "Yuwen Lu, Chao Zhang, Yuwen Yang, Yaxing Yao, Toby Jia-Jun Li"
+  venue: "CSCW 2024"
+  year: 2024
+
+- title: "\"Well-intended but half-hearted\": Hosts' Consideration of Guests' Privacy Using Smart Devices on Rental Properties"
+  authors: "Sunyup Park, Weijia He, Elmira Deldari, Pardis Emami-Naeini, Danny Yuxing Huang, Jessica Vitak, Yaxing Yao, Michael Zimmer"
+  venue: "SOUPS 2024"
+  year: 2024
+
+- title: "Exploring Design Opportunities for Family-Based Privacy Education in Informal Learning Spaces"
+  authors: "Lanjing Liu, Lan Gao, Yaxing Yao"
+  venue: "PoPETS 2024"
+  year: 2024
+
+- title: "An Empathy-Based Sandbox Approach to Bridge the Privacy Gap among Attitudes, Goals, Knowledge, and Behaviors"
+  authors: "Chaoran Chen, Weijun Li, Wenxin Song, Yanfang Ye, Yaxing Yao, Toby Jia-Jun Li"
+  venue: "CHI 2024"
+  year: 2024
+
+- title: "Towards Understanding Family Privacy and Security Literacy Conversations at Home: Design Implications for Privacy Literacy Interfaces"
+  authors: "Kenan Kamel A. Alghythee, Adel Hrncic, Karthik Singh, Sumanth Kunisetty, Yaxing Yao, Nikita Soni"
+  venue: "CHI 2024"
+  year: 2024
+
+- title: "Understanding How to Inform Blind and Low-Vision Users about Data Privacy through Privacy Question Answering Assistants"
+  authors: "Yuanyuan Feng, Abhilasha Ravichander, Yaxing Yao, Shikun Zhang, Rex Chen, Shomir Wilson, Norman Sadeh"
+  venue: "USENIX Security 2024"
+  year: 2024
+
+# ─── 2023 ─────────────────────────────────────────────────────────────────────
+
+- title: "Evaluating Evaluation Metrics: A Framework for Analyzing NLG Evaluation Metrics using Measurement Theory"
+  authors: "Ziang Xiao, Susu Zhang, Vivian Lai, Q. Vera Liao"
+  venue: "EMNLP 2023"
+  year: 2023
+  url: "https://aclanthology.org/2023.emnlp-main.676/"
+
+- title: "ByteSized32: A Corpus and Challenge Task for Generating Task-Specific World Models Expressed as Text Games"
+  authors: "Ruoyao Wang, Graham Todd, Xingdi Yuan, Ziang Xiao, Marc-Alexandre Côté, Peter Jansen"
+  venue: "EMNLP 2023"
+  year: 2023
+  url: "https://aclanthology.org/2023.emnlp-main.830.pdf"
+
+- title: "Deep Language Networks: Joint Prompt Training of Stacked LLMs using Variational Inference"
+  authors: "Alessandro Sordoni, Xingdi Yuan, Marc-Alexandre Côté, Matheus Pereira, Adam Trischler, Ziang Xiao, Arian Hosseini, Friederike Niedtner, Nicolas Le Roux"
+  venue: "NeurIPS 2023"
+  year: 2023
+  url: "https://arxiv.org/abs/2306.12509"
+
+- title: "Inform the Uninformed: Improving Online Informed Consent Reading with an AI-Powered Chatbot"
+  authors: "Ziang Xiao, Tiffany Wenting Li, Karrie Karahalios, Hari Sundaram"
+  venue: "CHI 2023"
+  year: 2023
+  url: "https://dl.acm.org/doi/abs/10.1145/3544548.3581252"
+
+- title: "Powering an AI Chatbot with Expert Sourcing to Support Credible Health Information Access"
+  authors: "Ziang Xiao, Q. Vera Liao, Michelle Zhou, Tyrone Grandison, Yunyao Li"
+  venue: "IUI 2023"
+  year: 2023
+  url: "https://dl.acm.org/doi/abs/10.1145/3581641.3584031"
+
+- title: "Supporting Qualitative Analysis with Large Language Models: Combining Codebook with GPT-3 for Deductive Coding"
+  authors: "Ziang Xiao, Xingdi Yuan, Q. Vera Liao, Rania Abdelghani, Pierre-Yves Oudeyer"
+  venue: "IUI 2023"
+  year: 2023
+  url: "https://dl.acm.org/doi/abs/10.1145/3581754.3584136"
+
+- title: "CoMPosT: Characterizing and Evaluating Caricature in LLM Simulations"
+  authors: "Myra Cheng, Tiziano Piccardi, Diyi Yang"
+  venue: "EMNLP 2023"
+  year: 2023
+  url: "https://arxiv.org/abs/2310.11501"
+
+- title: "Embedding Societal Values into Social Media Algorithms"
+  authors: "Michael Bernstein, Angèle Christin, Jeffrey Hancock, Tatsunori Hashimoto, Chenyan Jia, Michelle Lam, Nicole Meister, Nathaniel Persily, Tiziano Piccardi, Martin Saveski, Jeanne Tsai, Johan Ugander, Chunchen Xu"
+  venue: "Journal of Online Trust and Safety, Vol. 2, No. 1"
+  year: 2023
+  url: "https://doi.org/10.54501/jots.v2i1.148"
+
+- title: "User Interaction Patterns and Breakdowns in Conversing with LLM-Powered Voice Assistants"
+  authors: "Chien-Ming Huang et al."
+  venue: "International Journal of Human-Computer Studies"
+  year: 2023
+  url: "https://arxiv.org/pdf/2309.13879.pdf"
+
+- title: "\"What If It Is Wrong\": Effects of Power Dynamics and Trust Repair Strategy on Trust and Compliance in HRI"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2023"
+  year: 2023
+
+- title: "On Using Social Signals to Enable Flexible Error-Aware HRI"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2023"
+  year: 2023
+
+- title: "Co-Designing with Older Adults, for Older Adults: Robots to Promote Physical Activity"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2023"
+  year: 2023
+
+- title: "How Time Pressure from Different Phases of Decision-Making Influences Human-AI Collaboration"
+  authors: "Chien-Ming Huang et al."
+  venue: "CSCW 2023"
+  year: 2023
+  url: "https://dl.acm.org/doi/pdf/10.1145/3610068"
+
+- title: "Active Engagement with Virtual Reality Reduces Stress and Increases Positive Emotions"
+  authors: "Chien-Ming Huang et al."
+  venue: "ISMAR 2023"
+  year: 2023
+
+- title: "A Diary Study in Social Virtual Reality: Impact of Avatars with Disability Signifiers on the Social Experiences of People with Disabilities"
+  authors: "Kexin Zhang, Elmira Daldari, Yaxing Yao, Yuhang Zhao"
+  venue: "ASSETS 2023"
+  year: 2023
+
+- title: "Exploring Smart Commercial Building Occupants' Perceptions and Notification Preferences of Internet of Things Data Collection in the United States"
+  authors: "Tu Le, Alan Wang, Yaxing Yao, Yuanyuan Feng, Arsalan Heydarian, Norman Sadeh"
+  venue: "ASSETS 2023"
+  year: 2023
+  url: "https://arxiv.org/pdf/2303.04955.pdf"
+
+- title: "An Investigation of Teenager Experiences in Social Virtual Reality from Teenagers', Parents', and Bystanders' Perspectives"
+  authors: "Elmira Deldari, Diana Freed, Julio Poveda, Yaxing Yao"
+  venue: "SOUPS 2023"
+  year: 2023
+  url: "https://www.usenix.org/system/files/soups2023-deldari.pdf"
+
+- title: "Exploring Tenants' Preferences of Privacy Negotiation in Airbnb"
+  authors: "Zixin Wang, Danny Huang, Yaxing Yao"
+  venue: "USENIX Security 2023"
+  year: 2023
+  url: "https://www.usenix.org/system/files/usenixsecurity23-wang-zixin.pdf"
+
+- title: "\"If sighted people know, I should be able to know:\": Privacy Perceptions of Bystanders with Visual Impairments around Camera-based Technology"
+  authors: "Yuhang Zhao, Yaxing Yao, Jiaru Fu, Nihan Zhou"
+  venue: "USENIX Security 2023"
+  year: 2023
+  url: "https://www.usenix.org/system/files/sec23summer_196-zhao_yuhang-prepub.pdf"
+
+- title: "The Influence of Explanation Designs on User Understanding of Differential Privacy and Making Data-Sharing Decisions"
+  authors: "Zikai Alex Wen, Jingyu Jia, Hongyang Yan, Yaxing Yao, Zheli Liu, Changyu Dong"
+  venue: "Information Sciences"
+  year: 2023
+
+# ─── 2022 ─────────────────────────────────────────────────────────────────────
+
+- title: "A Large-Scale Characterization of How Readers Browse Wikipedia"
+  authors: "Tiziano Piccardi, Martin Gerlach, Akhil Arora, Robert West"
+  venue: "ACM Transactions on the Web"
+  year: 2022
+  url: "https://arxiv.org/abs/2112.11848"
+
+- title: "Homepage2Vec: Language-Agnostic Website Embedding and Classification"
+  authors: "Sylvain Lugeon, Tiziano Piccardi, Robert West"
+  venue: "ICWSM 2022"
+  year: 2022
+  url: "https://arxiv.org/abs/2201.03677"
+
+- title: "Modeling Human Response to Robot Errors for Timely Error Detection"
+  authors: "Chien-Ming Huang et al."
+  venue: "IROS 2022"
+  year: 2022
+  url: "https://arxiv.org/pdf/2208.00565.pdf"
+
+- title: "Learning a Group-Aware Policy for Robot Navigation"
+  authors: "Chien-Ming Huang et al."
+  venue: "IROS 2022"
+  year: 2022
+
+- title: "Understanding User Reliance on AI in Assisted Decision-Making"
+  authors: "Chien-Ming Huang et al."
+  venue: "CSCW 2022"
+  year: 2022
+  url: "https://dl.acm.org/doi/pdf/10.1145/3555572"
+
+- title: "Owning Mistakes Sincerely: Strategies for Mitigating AI Errors"
+  authors: "Chien-Ming Huang et al."
+  venue: "CHI 2022"
+  year: 2022
+
+- title: "Explainable Medical Imaging AI Needs Human-Centered Design: Guidelines and Evidence from a Systematic Review"
+  authors: "Chien-Ming Huang et al."
+  venue: "npj Digital Medicine"
+  year: 2022
+  url: "https://www.nature.com/articles/s41746-022-00699-2"
+
+- title: "\"It's Just Part of Me:\": Understanding Avatar Diversity and Self-presentation of People with Disabilities in Social Virtual Reality"
+  authors: "Kexin Zhang, Elmira Deldari, Zhicong Lu, Yaxing Yao, Yuhang Zhao"
+  venue: "ASSETS 2022"
+  year: 2022
+  url: "https://arxiv.org/pdf/2208.11170.pdf"
+
+- title: "How Usable Are iOS App Privacy Labels?"
+  authors: "Aerin Shikun Zhang, Yuanyuan Feng, Yaxing Yao, Lorrie Cranor, Norman Sadeh"
+  venue: "Proceedings on Privacy Enhancing Technologies 2022(4)"
+  year: 2022
+
+- title: "\"It would probably turn into a social faux-pas\": Users' and Bystanders' Preferences of Privacy Awareness Mechanisms in Smart Homes"
+  authors: "Parth Thakkar, Shijing He, Shiyu Xu, Danny Huang, Yaxing Yao"
+  venue: "CHI 2022"
+  year: 2022
+
+- title: "Exploring the Needs of Users for Supporting Privacy-Protective Behaviors in Smart Homes"
+  authors: "Haojian Jin, Boyuan Guo, Rituparna Roychoudhury, Yaxing Yao, Swarun Kumar, Yuvraj Agarwal, Jason I. Hong"
+  venue: "CHI 2022"
+  year: 2022
+
+- title: "Impact and User Perception of Sandwich Attacks in the DeFi Ecosystem"
+  authors: "Ye Wang, Patrick Zuest, Yaxing Yao, Zhicong Lu, Roger Wattenhofer"
+  venue: "CHI 2022"
+  year: 2022
+
+- title: "Increasing Adoption of Tor Browser Using Informational and Planning Nudges"
+  authors: "Peter Story, Daniel Smullen, Rex Chen, Yaxing Yao, Alessandro Acquisti, Lorrie Faith Cranor, Norman Sadeh, Florian Schaub"
+  venue: "Proceedings on Privacy Enhancing Technologies 2022(2)"
+  year: 2022
+
+# ─── 2021 ─────────────────────────────────────────────────────────────────────
+
+- title: "Let Me Ask You This: How Can a Voice Assistant Elicit Explicit User Feedback?"
+  authors: "Ziang Xiao, Sarah Mennicken, Bernd Huber, Adam Shonkoff, Jennifer Thom"
+  venue: "CSCW 2021"
+  year: 2021
+  url: "https://dl.acm.org/doi/10.1145/3479532"
+
+- title: "Contestability for Content Moderation"
+  authors: "Kristen Vaccaro, Ziang Xiao, Kevin Hamilton, Karrie Karahalios"
+  venue: "CSCW 2021"
+  year: 2021
+  url: "https://dl.acm.org/doi/10.1145/3476059"
+
+- title: "A Large Scale Study of Reader Interactions with Images on Wikipedia"
+  authors: "Daniele Rama, Tiziano Piccardi, Miriam Redi, Rossano Schifanella"
+  venue: "EPJ Data Science"
+  year: 2021
+  url: "https://arxiv.org/abs/2112.01868"
+
+- title: "On the Value of Wikipedia as a Gateway to the Web"
+  authors: "Tiziano Piccardi, Miriam Redi, Giovanni Colavizza, Robert West"
+  venue: "WWW 2021"
+  year: 2021
+  url: "https://arxiv.org/abs/2102.07385"
+
+- title: "Crosslingual Topic Modeling with WikiPDA"
+  authors: "Tiziano Piccardi, Robert West"
+  venue: "WWW 2021"
+  year: 2021
+  url: "https://arxiv.org/abs/2009.11207"
+
+- title: "Designing User-Centric Programming Aids for Kinesthetic Teaching of Collaborative Robots"
+  authors: "Chien-Ming Huang et al."
+  venue: "Robotics and Autonomous Systems"
+  year: 2021
+
+- title: "Managing Potentially Intrusive Practices in the Browser: A User-Centered Perspective"
+  authors: "Daniel Smullen, Yaxing Yao, Yuanyuan Feng, Norman Sadeh, Arthur Edelstein, Rebecca Weiss"
+  venue: "Proceedings on Privacy Enhancing Technologies 2021(4)"
+  year: 2021
+
+- title: "Awareness, Adoption, and Misconceptions of Web Privacy Tools"
+  authors: "Peter Story, Daniel Smullen, Yaxing Yao, Alessandro Acquisti, Lorrie Faith Cranor, Norman Sadeh, Florian Schaub"
+  venue: "Proceedings on Privacy Enhancing Technologies 2021(3)"
+  year: 2021
+  url: "https://usableprivacy.org/static/files/story_popets_2021.pdf"
+
+- title: "\"How I Know For Sure\": People's Perspectives on Solely Automated Decision-Making (SADM)"
+  authors: "Smirity Kaushik, Yaxing Yao, Pierre Dewitte, Yang Wang"
+  venue: "SOUPS 2021"
+  year: 2021
+  award: "IAPP Privacy Award"
+
+- title: "Toggles, Dollar Signs, and Triangles: How to (In)Effectively Convey Privacy Choices"
+  authors: "Hana Habib, Yixin Zou, Yaxing Yao, Alessandro Acquisti, Lorrie Cranor, Joe Reidenberg, Norman Sadeh, Florian Schaub"
+  venue: "CHI 2021"
+  year: 2021
+
+- title: "A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things"
+  authors: "Yuanyuan Feng, Yaxing Yao, Norman Sadeh"
+  venue: "CHI 2021"
+  year: 2021
+
+# ─── 2020 ─────────────────────────────────────────────────────────────────────
+
+- title: "Tell Me About Yourself: Using an AI-Powered Chatbot to Conduct Conversational Surveys with Open-ended Questions"
+  authors: "Ziang Xiao, Michelle X Zhou, Q. Vera Liao, Gloria Mark, Changyan Chi, Wenxi Chen, Huahai Yang"
+  venue: "ACM Transactions on Computer-Human Interaction (TOCHI)"
+  year: 2020
+  url: "https://dl.acm.org/doi/abs/10.1145/3381804"
+
+- title: "A Data-Driven, Player-Centric Approach to Evaluating Spatial Skill Training Games"
+  authors: "Helen Wauck, Ziang Xiao, Tiffany Wenting Li, Brian P Bailey"
+  venue: "CHI Play 2020"
+  year: 2020
+  url: "https://dl.acm.org/doi/10.1145/3410404.3414255"
+  award: "Honorable Mention"
+
+- title: "If I Hear You Correctly: Building and Evaluating Interview Chatbots with Active Listening Skills"
+  authors: "Ziang Xiao, Michelle X Zhou, Wenxi Chen, Huahai Yang, Changyan Chi"
+  venue: "CHI 2020"
+  year: 2020
+  url: "https://dl.acm.org/doi/abs/10.1145/3313831.3376131"
+
+- title: "Reader Engagement with Wikipedia's Medical Content"
+  authors: "Lauren A. Maggio, Ryan M. Steinberg, Tiziano Piccardi, John M. Willinsky"
+  venue: "eLife"
+  year: 2020
+  url: "https://doi.org/10.7554/eLife.52426"
+
+- title: "Quantifying Engagement with Citations on Wikipedia"
+  authors: "Tiziano Piccardi, Miriam Redi, Giovanni Colavizza, Robert West"
+  venue: "WWW 2020"
+  year: 2020
+  url: "https://arxiv.org/abs/2001.08614"
+
+- title: "WikiHist.html: English Wikipedia's Full Revision History in HTML Format"
+  authors: "Blagoj Mitrevski, Tiziano Piccardi, Robert West"
+  venue: "ICWSM 2020"
+  year: 2020
+  url: "https://arxiv.org/abs/2001.10256"
+
+- title: "See What I See: Enabling User-Centric Robotic Assistance Using First-Person Demonstrations"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2020"
+  year: 2020
+
+- title: "Intent-Aware Pedestrian Prediction for Adaptive Crowd Navigation"
+  authors: "Chien-Ming Huang et al."
+  venue: "ICRA 2020"
+  year: 2020
+
+# ─── 2019 ─────────────────────────────────────────────────────────────────────
+
+- title: "Should We Use an Abstract Comic Form to Persuade? Experiments with Online Charitable Donation"
+  authors: "Ziang Xiao, Po-Shiun Ho, Xinran Wang, Karrie Karahalios, Hari Sundaram"
+  venue: "CSCW 2019"
+  year: 2019
+  url: "https://dl.acm.org/doi/10.1145/3359177"
+
+- title: "Who Should be My Teammates: Using a Conversational Agent to Understand Individuals and Help Teaming"
+  authors: "Ziang Xiao, Michelle X Zhou, Wai-Tat Fu"
+  venue: "IUI 2019"
+  year: 2019
+  url: "https://dl.acm.org/doi/10.1145/3301275.3302264"
+
+- title: "PATI: A Projection-Based Augmented Table-Top Interface for Robot Programming"
+  authors: "Chien-Ming Huang et al."
+  venue: "IUI 2019"
+  year: 2019
+
+- title: "Privacy Perceptions and Designs of Bystanders in Smart Homes"
+  authors: "Yaxing Yao, Justin Reed Basdeo, Oriana Rosata Mcdonough, Yang Wang"
+  venue: "Proc. ACM Hum.-Comput. Interact. (CSCW)"
+  year: 2019
+  award: "Best Paper Honorable Mention"
+
+- title: "Defending My Castle: A Co-Design Study of Privacy Mechanisms for Smart Homes"
+  authors: "Yaxing Yao, Justin Reed Basdeo, Smirity Kaushik, Yang Wang"
+  venue: "CHI 2019"
+  year: 2019
+
+- title: "\"What if?\" Predicting Individual Users' Smart Home Privacy Preferences and Their Changes"
+  authors: "Nata M. Barbosa, Joon S. Park, Yaxing Yao, Yang Wang"
+  venue: "Proceedings on Privacy Enhancing Technologies 2019(4)"
+  year: 2019
+
+- title: "Higher Education Check-Ins: Exploring the User Experience of Hybrid Location Sensing"
+  authors: "Yun Huang, Yisi Sang, Qunfang Wu, Yaxing Yao"
+  venue: "Proc. ACM Hum.-Comput. Interact. (CSCW)"
+  year: 2019
+
+# ─── 2018 ─────────────────────────────────────────────────────────────────────
+
+- title: "To Label or Not to Label: The Effect of Stance and Credibility Labels on Readers' Selection and Perception of News Articles"
+  authors: "Mingkun Gao, Ziang Xiao, Karrie Karahalios, Wai-Tat Fu"
+  venue: "CSCW 2018"
+  year: 2018
+  url: "https://dl.acm.org/doi/10.1145/3274324"
+
+- title: "Structuring Wikipedia Articles with Section Recommendations"
+  authors: "Tiziano Piccardi, Michele Catasta, Leila Zia, Robert West"
+  venue: "SIGIR 2018"
+  year: 2018
+  url: "http://arxiv.org/abs/1804.05995"
+
+- title: "Quootstrap: Scalable Unsupervised Extraction of Quotation-Speaker Pairs from Large News Corpora via Bootstrapping"
+  authors: "Dario Pavllo, Tiziano Piccardi, Robert West"
+  venue: "ICWSM 2018"
+  year: 2018
+  url: "https://arxiv.org/abs/1804.02525"
+
+- title: "Thinking Aloud with a Tutoring Robot to Enhance Learning"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2018"
+  year: 2018
+  url: "https://dl.acm.org/doi/pdf/10.1145/3171221.3171250"
+
+# ─── 2017 ─────────────────────────────────────────────────────────────────────
+
+- title: "Give Me a Break! Personalized Timing Strategies to Promote Learning in Robot-Child Tutoring"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2017"
+  year: 2017
+
+- title: "Privacy Mechanisms for Drones: Perceptions of Drone Controllers and Bystanders"
+  authors: "Yaxing Yao, Huichuan Xia, Yun Huang, Yang Wang"
+  venue: "CHI 2017"
+  year: 2017
+
+- title: "Free to Fly in Public Spaces: Drone Controllers' Privacy Perceptions and Practices"
+  authors: "Yaxing Yao, Huichuan Xia, Yun Huang, Yang Wang"
+  venue: "CHI 2017"
+  year: 2017
+
+- title: "Folk Models of Online Behavioral Advertising"
+  authors: "Yaxing Yao, Davide Lo Re, Yang Wang"
+  venue: "CSCW 2017"
+  year: 2017
+
+# ─── 2016 ─────────────────────────────────────────────────────────────────────
+
+- title: "Anticipatory Robot Control for Efficient Human-Robot Collaboration"
+  authors: "Chien-Ming Huang et al."
+  venue: "HRI 2016"
+  year: 2016
+
+- title: "Flying Eyes and Hidden Controllers: A Qualitative Study of People's Privacy Perceptions of Civilian Drones in The US"
+  authors: "Yang Wang, Huichuan Xia, Yaxing Yao, Yun Huang"
+  venue: "Proceedings on Privacy Enhancing Technologies 2016(3)"
+  year: 2016
+
+- title: "Toward a Mixed-Initiative QA System: From Studying Predictors in Stack Exchange to Building a Mixed-Initiative Tool"
+  authors: "Gregorio Convertino, Massimo Zancanaro, Tiziano Piccardi, Felipe Ortega"
+  venue: "International Journal of Human-Computer Studies, Volume 99"
+  year: 2016
+  url: "https://doi.org/10.1016/j.ijhcs.2016.10.008"
+
+# ─── 2015 ─────────────────────────────────────────────────────────────────────
+
+- title: "Adaptive Coordination Strategies for Human-Robot Handovers"
+  authors: "Chien-Ming Huang et al."
+  venue: "RSS 2015"
+  year: 2015
+  url: "https://www.roboticsproceedings.org/rss11/p31.pdf"
+
+- title: "Using Gaze Patterns to Predict Task Intent in Collaboration"
+  authors: "Chien-Ming Huang et al."
+  venue: "Frontiers in Psychology"
+  year: 2015
+  url: "https://journal.frontiersin.org/article/10.3389/fpsyg.2015.01049/abstract"
+
+# ─── 2014 ─────────────────────────────────────────────────────────────────────
+
+- title: "Towards Crowd-based Customer Service: A Mixed-Initiative Tool for Managing Q&A Sites"
+  authors: "Tiziano Piccardi, Gregorio Convertino, Massimo Zancanaro, Ji Wang, Cedric Archambeau"
+  venue: "CHI 2014"
+  year: 2014
+  url: "https://doi.org/10.1145/2556288.2557202"

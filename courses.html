@@ -7,16 +7,19 @@ description: "HCI-related courses offered at Johns Hopkins University"
 
 <article id="main">
 
-	<header class="special container">
-		<span class="icon solid fa-book"></span>
-		<h2>HCI <strong>Courses</strong></h2>
-		<p>Human-computer interaction courses offered at Johns Hopkins University</p>
-	</header>
-
 	<section class="wrapper style4 container">
 		<div class="col-8 col-12-narrower">
 			<div class="content">
-				{% for course in site.courses %}
+				{% assign sorted_years = site.courses | map: "year" | uniq | sort | reverse %}
+				{% assign semesters = "Fall,Spring" | split: "," %}
+				{% assign shown_latest = "" %}
+				{% for year in sorted_years %}
+				{% for sem in semesters %}
+				{% assign term_courses = site.courses | where: "year", year | where: "semester", sem | sort: "order" %}
+				{% if term_courses.size > 0 %}
+				{% if shown_latest == "" %}
+				<h2>{{ sem }} {{ year }}</h2>
+				{% for course in term_courses %}
 				<section>
 					<header>
 						<h3><a href="{{ course.link }}"><strong>{{ course.number }} {{ course.title }}</strong></a></h3>
@@ -24,6 +27,24 @@ description: "HCI-related courses offered at Johns Hopkins University"
 					</header>
 					{{ course.content }}
 				</section>
+				{% endfor %}
+				{% assign shown_latest = "yes" %}
+				{% else %}
+				<details>
+					<summary><h2 style="display:inline">{{ sem }} {{ year }}</h2></summary>
+					{% for course in term_courses %}
+					<section>
+						<header>
+							<h3><a href="{{ course.link }}"><strong>{{ course.number }} {{ course.title }}</strong></a></h3>
+							<p><b>Instructor:</b> <a href="{{ '/people.html#' | append: course.instructor_slug | relative_url }}">{{ course.instructor }}</a></p>
+						</header>
+						{{ course.content }}
+					</section>
+					{% endfor %}
+				</details>
+				{% endif %}
+				{% endif %}
+				{% endfor %}
 				{% endfor %}
 			</div>
 		</div>

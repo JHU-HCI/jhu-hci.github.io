@@ -7,21 +7,17 @@ description: "HCI-related seminars and talks at Johns Hopkins University"
 
 <article id="main">
 
-	<header class="special container">
-		<span class="icon solid fa-comments"></span>
-		<h2>The Frontiers of <strong>HCI Research</strong></h2>
-		<p>HCI-related seminars and talks at Johns Hopkins University</p>
-	</header>
-
 	<section class="wrapper style4 container">
 		<div class="content">
+			{% assign sorted_years = site.seminars | map: "year" | uniq | sort | reverse %}
+			{% assign shown_latest = "" %}
+			{% for year in sorted_years %}
+			{% assign year_talks = site.seminars | where: "year", year | sort: "date" | reverse %}
+			{% if shown_latest == "" %}
 			<section>
-				<header>
-					<h2>Upcoming Talks &amp; Events</h2>
-				</header>
+				<header><h2>{{ year }}</h2></header>
 			</section>
-
-{% for talk in site.seminars %}
+			{% for talk in year_talks %}
 			<section>
 				<header>
 					<h3>{{ talk.date | date: "%B %-d, %Y" }} &ndash; <strong>{{ talk.speaker }}</strong> &ndash; {{ talk.affiliation }}</h3>
@@ -31,6 +27,24 @@ description: "HCI-related seminars and talks at Johns Hopkins University"
 				{% endif %}
 				{{ talk.content }}
 			</section>
+			{% endfor %}
+			{% assign shown_latest = "yes" %}
+			{% else %}
+			<details>
+				<summary><h2 style="display:inline">{{ year }}</h2></summary>
+				{% for talk in year_talks %}
+				<section>
+					<header>
+						<h3>{{ talk.date | date: "%B %-d, %Y" }} &ndash; <strong>{{ talk.speaker }}</strong> &ndash; {{ talk.affiliation }}</h3>
+					</header>
+					{% if talk.photo %}
+					<img class="speaker-pic" src="{{ talk.photo | relative_url }}" align="left" alt="{{ talk.speaker }}">
+					{% endif %}
+					{{ talk.content }}
+				</section>
+				{% endfor %}
+			</details>
+			{% endif %}
 			{% endfor %}
 		</div>
 	</section>
