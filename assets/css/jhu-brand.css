@@ -850,3 +850,76 @@ textarea:focus {
 .icon.circle.bsky-circle:hover {
 	background: #006ecc;
 }
+
+/* ============================================================
+   Coming Soon mode
+   ============================================================ */
+body.coming-soon {
+	background: var(--jhu-heritage-blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+#coming-soon-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.5rem;
+	padding: 2rem;
+}
+
+body.coming-soon #header {
+	position: static;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	width: auto;
+}
+
+body.coming-soon #header #logo {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+body.coming-soon #header .unit-link {
+	display: flex;
+	flex-direction: column;
+}
+
+body.coming-soon #header .unit-name {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 0.02em;
+}
+
+body.coming-soon #header .unit-sub {
+	font-size: 0.85rem;
+	color: rgba(255,255,255,0.75);
+}
+
+#coming-soon-content {
+	text-align: center;
+	color: #fff;
+}
+
+#coming-soon-content h2 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 0 0 0.75rem;
+	color: #fff;
+	border: none;
+}
+
+#coming-soon-content p {
+	font-size: 1.1rem;
+	color: rgba(255,255,255,0.8);
+	margin: 0;
+}

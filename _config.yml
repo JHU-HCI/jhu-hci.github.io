@@ -3,6 +3,9 @@ description: "Placing People at the Center of Technological Innovation"
 url: "https://hci.jhu.edu"
 baseurl: ""
 
+# Coming Soon mode: when true, all pages show only the logo and a coming soon message
+coming_soon: true
+
 # Collections
 collections:
   people:

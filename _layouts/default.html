@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
+{% if site.coming_soon %}
+<body class="coming-soon is-preload">
+	<div id="coming-soon-wrapper">
+		<header id="header">
+			<h1 id="logo">
+				<a href="{{ '/' | relative_url }}" class="shield-link" aria-label="HCI Group at Johns Hopkins University">
+					<img src="{{ '/images/white-shield.png' | relative_url }}" alt="Johns Hopkins University" class="jhu-shield">
+				</a>
+				<span class="logo-divider"></span>
+				<span class="unit-link">
+					<span class="unit-name">HCI Group</span>
+					<span class="unit-sub">Johns Hopkins University</span>
+				</span>
+			</h1>
+		</header>
+		<div id="coming-soon-content">
+			<h2>Coming Soon</h2>
+			<p>We're working on something new. Check back soon.</p>
+		</div>
+	</div>
+	{% include scripts.html %}
+</body>
+{% else %}
 <body class="{{ page.body_class }} is-preload">
 	<div id="page-wrapper">
 
@@ -14,4 +37,5 @@
 
 	{% include scripts.html %}
 </body>
+{% endif %}
 </html>
