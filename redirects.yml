@@ -1,0 +1,3 @@
+# URL shortener — each slug is served at /<slug> and redirects to url
+- slug: hcai-workshop-2026
+  url: https://docs.google.com/document/d/1iX7uOfxE5ao0RVWAmDcuX-EbUiWaC6ooJBmYOCJ3-3Y/edit?usp=sharing

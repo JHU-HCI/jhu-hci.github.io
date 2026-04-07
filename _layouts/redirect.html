@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta http-equiv="refresh" content="0;url={{ page.redirect_to }}">
+  <link rel="canonical" href="{{ page.redirect_to }}">
+  <style>
+    body { font-family: sans-serif; display: flex; align-items: center;
+           justify-content: center; height: 100vh; margin: 0; background: #f5f7fa; }
+    p { color: #555; }
+    a { color: #002D72; }
+  </style>
+</head>
+<body>
+  <p>Redirecting… <a href="{{ page.redirect_to }}">Click here if you are not redirected.</a></p>
+  <script>window.location.replace({{ page.redirect_to | jsonify }});</script>
+</body>
+</html>
