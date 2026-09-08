@@ -6,7 +6,7 @@ description: "Faculty and researchers in the JHU HCI group"
 ---
 
 {% assign faculty    = site.people | where: "section", "faculty"   | sort: "order" %}
-{% assign affiliated = site.people | where: "section", "affiliated" | sort: "order" %}
+{% assign affiliated = site.people | where: "section", "affiliated" | where: "placeholder", true | sort: "order" %}
 {% assign trainees   = site.people | where: "section", "trainee"   | sort: "order" %}
 
 <article id="main">
@@ -17,8 +17,8 @@ description: "Faculty and researchers in the JHU HCI group"
 			{% if faculty.size > 0 %}
 			<div class="people-section">
 				<h2 class="people-section-title">Faculty</h2>
-				<div class="row" id="people-faculty">
-					{% include people_cards.html group=faculty %}
+				<div class="row people-grid" id="people-faculty">
+					{% include people_cards.html group=faculty column_class="col-3 col-6-narrow col-6-narrower" %}
 				</div>
 			</div>
 			{% endif %}
@@ -26,7 +26,7 @@ description: "Faculty and researchers in the JHU HCI group"
 			{% if affiliated.size > 0 %}
 			<div class="people-section">
 				<h2 class="people-section-title">Affiliated Faculty</h2>
-				<div class="row" id="people-affiliated">
+				<div class="row people-grid" id="people-affiliated">
 					{% include people_cards.html group=affiliated %}
 				</div>
 			</div>
@@ -35,7 +35,7 @@ description: "Faculty and researchers in the JHU HCI group"
 			{% if trainees.size > 0 %}
 			<div class="people-section">
 				<h2 class="people-section-title">PhD Students &amp; Postdocs</h2>
-				<div class="row" id="people-trainees">
+				<div class="row people-grid" id="people-trainees">
 					{% include people_cards.html group=trainees %}
 				</div>
 			</div>

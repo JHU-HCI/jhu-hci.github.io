@@ -1,5 +1,5 @@
 {% for person in include.group %}
-<div class="col-2 col-6-narrower">
+<div class="{{ include.column_class | default: 'col-2 col-6-narrower' }}">
 	<div class="card">
 		<div class="photo-container">
 			{% if person.photo and person.photo != "" %}
@@ -14,9 +14,13 @@
 			</div>
 		</div>
 		<div class="text-container">
+			{% if person.website and person.website != "" %}
 			<a href="{{ person.website }}">
-				<h2 id="{{ person.name | replace: ' ', '_' }}">{{ person.name }}</h2>
+				<h2 id="{{ person.anchor | default: person.name | replace: ' ', '_' }}">{{ person.name }}</h2>
 			</a>
+			{% else %}
+			<h2 id="{{ person.anchor | default: person.name | replace: ' ', '_' }}">{{ person.name }}</h2>
+			{% endif %}
 		</div>
 	</div>
 </div>
