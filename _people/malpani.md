@@ -6,5 +6,5 @@ website: https://anandmalpani.github.io
 picture: malpani.jpg
 area: User interface design; Intelligent user interfaces; Augmented, virtual or mixed reality; Informatics
 section: affiliated
-order: 5
+order: 3
 ---

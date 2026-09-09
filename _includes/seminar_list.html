@@ -1,0 +1,16 @@
+<ul class="seminar-list">
+	{% for event in include.group %}
+	<li>
+		<a href="{{ event.url | relative_url }}"><strong>{% if event.speaker %}{{ event.speaker }}{% else %}{{ event.title }}{% endif %}</strong></a>
+		{%- if event.speakers %} &mdash;
+			{%- for speaker in event.speakers %} {{ speaker.name }}{% if speaker.affiliation %} ({{ speaker.affiliation }}){% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}
+		{%- elsif event.speaker %} &mdash; {{ event.speaker }}{% if event.affiliation %} ({{ event.affiliation }}){% endif %}
+		{%- endif %}
+		<br>
+		<small>
+			{{- event.date | date: "%B %-d, %Y" -}}
+			{% if event.location %} &middot; {{ event.location }}{% endif %}
+		</small>
+	</li>
+	{% endfor %}
+</ul>

@@ -20,6 +20,9 @@
 			<li{% if page.url contains 'courses' %} class="current"{% endif %}>
 				<a href="{{ '/courses.html' | relative_url }}">Courses</a>
 			</li>
+			<li{% if page.url contains 'labs' %} class="current"{% endif %}>
+				<a href="{{ '/labs.html' | relative_url }}">Labs</a>
+			</li>
 			<li{% if page.url contains 'seminar' %} class="current"{% endif %}>
 				<a href="{{ '/seminar.html' | relative_url }}">Seminars</a>
 			</li>

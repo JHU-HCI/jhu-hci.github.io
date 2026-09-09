@@ -9,14 +9,42 @@ coming_soon: true
 # Collections
 collections:
   people:
-    output: false
+    output: true
     sort_by: order
   courses:
-    output: false
+    output: true
     sort_by: order
   seminars:
-    output: false
+    output: true
+    sort_by: date
+    permalink: /seminars/:name/
+  labs:
+    output: true
     sort_by: order
+
+# Per-collection defaults so individual content files don't each need a
+# `layout:` field.
+defaults:
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "person"
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "course"
+  - scope:
+      path: ""
+      type: "labs"
+    values:
+      layout: "lab"
+  - scope:
+      path: ""
+      type: "seminars"
+    values:
+      layout: "seminar"
 
 # Build settings
 markdown: kramdown
@@ -25,6 +53,8 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+  - _config_dev.yml
+  - vendor/
   - redirects.yml
   - README.txt
   - LICENSE.txt

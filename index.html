@@ -130,6 +130,41 @@ header_alt: true
 
 	</section>
 
+	<!-- Seminar -->
+	<section class="wrapper style2 container special">
+
+		<header class="major">
+			<h2>Upcoming HCI Seminar</h2>
+		</header>
+
+		{% assign today = site.time | date: "%Y%m%d" %}
+		{% assign upcoming_events = site.seminars | sort: "date" %}
+		{% assign next_seminar = nil %}
+		{% for event in upcoming_events %}
+			{% if next_seminar == nil %}
+				{% assign event_day = event.date | date: "%Y%m%d" %}
+				{% if event_day >= today %}{% assign next_seminar = event %}{% endif %}
+			{% endif %}
+		{% endfor %}
+
+		{% if next_seminar %}
+		<section>
+			<header>
+				<h3><a href="{{ next_seminar.url | relative_url }}">{% if next_seminar.speaker %}{{ next_seminar.speaker }}{% else %}{{ next_seminar.title }}{% endif %}</a></h3>
+				<p>{{ next_seminar.date | date: "%A, %B %-d, %Y" }}{% if next_seminar.start_time %} &middot; {{ next_seminar.start_time }}{% if next_seminar.end_time %}&ndash;{{ next_seminar.end_time }}{% endif %}{% endif %}{% if next_seminar.location %} &middot; {{ next_seminar.location }}{% endif %}</p>
+			</header>
+			{% if next_seminar.speakers %}
+			<p>{% for speaker in next_seminar.speakers %}{{ speaker.name }}{% if speaker.affiliation %}, {{ speaker.affiliation }}{% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}</p>
+			{% endif %}
+			<p><a href="{{ next_seminar.url | relative_url }}" class="button">Details</a></p>
+		</section>
+		{% else %}
+		<p>The HCI Seminar meets regularly during the academic year.
+			<a href="{{ '/seminar.html' | relative_url }}">Browse past talks &rarr;</a></p>
+		{% endif %}
+
+	</section>
+
 </article>
 
 <!-- CTA -->

@@ -5,9 +5,9 @@ body_class: no-sidebar
 description: "Faculty and researchers in the JHU HCI group"
 ---
 
-{% assign faculty    = site.people | where: "section", "faculty"   | sort: "order" %}
-{% assign affiliated = site.people | where: "section", "affiliated" | where: "placeholder", true | sort: "order" %}
-{% assign trainees   = site.people | where: "section", "trainee"   | sort: "order" %}
+{% assign faculty    = site.people | where: "section", "faculty"    | where_exp: "p", "p.placeholder != true" | sort: "order" %}
+{% assign affiliated = site.people | where: "section", "affiliated" | where_exp: "p", "p.placeholder != true" | sort: "order" %}
+{% assign trainees   = site.people | where: "section", "trainee"    | where_exp: "p", "p.placeholder != true" | sort: "order" %}
 
 <article id="main">
 

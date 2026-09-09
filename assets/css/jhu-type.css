@@ -1,0 +1,136 @@
+/*
+ * JHU HCI — Type scale matched to the CS department's HCI page
+ * https://www.cs.jhu.edu/research/human-computer-interaction/
+ *
+ * Measured from the WSE theme's own stylesheet (wp-content/themes/wse/css/site.css):
+ *   body      Work Sans 300, 18px / 1.5556, no letter-spacing
+ *   headings  Roboto Slab 500, sentence case
+ *             h1 24px / 1.4167   h2 21px / 1.5238   h3 18px / 1.5556
+ *
+ * The families already come from jhu-brand.css; this file only changes the scale,
+ * weights, and casing that the HTML5 UP template (main.css) imposes.
+ *
+ * ── THREE STATES ─────────────────────────────────────────────────────────────
+ * 1. CS-matched (current)  sentence-case headings — the two custom properties
+ *                          below are `none` / `0`.
+ * 2. Keep ALL-CAPS headings at the new sizes: set
+ *       --heading-transform: uppercase;
+ *       --heading-letter-spacing: 0.1em;
+ *    in the :root block below. Nothing else changes.
+ * 3. Original template look: delete the one <link> to this file in
+ *    _includes/head.html. Nothing else in the repo references it.
+ * ─────────────────────────────────────────────────────────────────────────────
+ *
+ * Scope note: display type is deliberately left alone — the home-page hero
+ * (#banner) and the header.major / header.special section titles keep the
+ * template's large sizing. Only body copy and in-content headings change.
+ */
+
+:root {
+	--heading-transform: none;
+	--heading-letter-spacing: 0;
+
+	--type-body-size: 18px;
+	--type-body-line: 1.5556;
+	--type-h1-size: 24px;
+	--type-h2-size: 21px;
+	--type-h3-size: 18px;
+	--type-heading-weight: 500;
+}
+
+/* ---------- Body copy ---------- */
+
+body,
+input,
+select,
+textarea {
+	font-family: 'Work Sans', sans-serif;
+	font-size: var(--type-body-size);
+	font-weight: 300;
+	line-height: var(--type-body-line);
+	letter-spacing: 0;
+}
+
+#main .content p,
+#main .content li,
+#main .content dd,
+#main .content table {
+	letter-spacing: 0;
+	line-height: var(--type-body-line);
+}
+
+/* ---------- In-content headings ---------- */
+
+#main .content h1,
+#main .content h2,
+#main .content h3,
+#main .content h4,
+#main .content h5,
+#main .content h6,
+.people-section-title {
+	font-family: 'Roboto Slab', serif;
+	font-weight: var(--type-heading-weight);
+	text-transform: var(--heading-transform);
+	letter-spacing: var(--heading-letter-spacing);
+	line-height: 1.45;
+	color: var(--jhu-heritage-blue);
+}
+
+#main .content h1 { font-size: var(--type-h1-size); line-height: 1.4167; }
+#main .content h2,
+.people-section-title { font-size: var(--type-h2-size); line-height: 1.5238; }
+#main .content h3 { font-size: var(--type-h3-size); line-height: 1.5556; }
+#main .content h4 { font-size: 16px; line-height: 1.75; }
+#main .content h5,
+#main .content h6 { font-size: 14px; line-height: 1.7143; }
+
+/* `<summary><h2>` accordions on the courses and seminars pages */
+#main .content details > summary > h2 {
+	font-size: var(--type-h2-size);
+	letter-spacing: var(--heading-letter-spacing);
+	text-transform: var(--heading-transform);
+}
+
+/* People-card names: Roboto Slab 500 at the CS page's .entity_name size */
+.text-container h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: var(--type-heading-weight);
+	font-size: 16px;
+	line-height: 1.5;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+/* Hover overlay terms stay small enough to fit the 175px card */
+.middle .text {
+	font-size: 13px;
+	line-height: 1.45;
+	letter-spacing: 0;
+}
+
+/* ---------- Header wordmark ---------- */
+/* These were em-relative off the body size, so the 18px base shrank them; pin them. */
+
+#header h1#logo .unit-name {
+	font-size: 18px;
+}
+
+#header h1#logo .unit-sub {
+	font-size: 11px;
+}
+
+/* ---------- Header navigation ---------- */
+
+#header nav#nav > ul > li > a {
+	font-size: 24px;
+}
+
+@media screen and (max-width: 980px) {
+	#header nav#nav > ul > li > a {
+		font-size: 20px;
+	}
+}
+
+#navPanel .link {
+	font-size: 16px;
+}

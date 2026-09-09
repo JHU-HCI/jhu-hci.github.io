@@ -1,0 +1,77 @@
+---
+layout: default
+body_class: no-sidebar
+---
+
+{% assign event_labels = "talk:Talk|guest_talk:Guest Talk|practice_talk:Practice Talks" | split: "|" %}
+{% assign event_label = page.event_type %}
+{% for pair in event_labels %}
+	{% assign parts = pair | split: ":" %}
+	{% if parts[0] == page.event_type %}{% assign event_label = parts[1] %}{% endif %}
+{% endfor %}
+
+<article id="main">
+
+	<section class="wrapper style4 container">
+		<div class="col-8 col-12-narrower">
+			<div class="content">
+
+				<header>
+					<h1>{% if page.speaker %}{{ page.speaker }}{% else %}{{ page.title }}{% endif %}</h1>
+					{% if page.series %}
+					<p><em>{{ page.series }}{% if page.event_type %} &mdash; {{ event_label }}{% endif %}</em></p>
+					{% endif %}
+				</header>
+
+				{% if page.speakers %}
+				<h2>Speaker{% if page.speakers.size > 1 %}s{% endif %}</h2>
+				<ul>
+					{% for speaker in page.speakers %}
+					<li>
+						{% assign linked_person = nil %}
+						{% if speaker.person_slug and speaker.person_slug != "" %}
+							{% assign linked_person = site.people | where: "slug", speaker.person_slug | first %}
+						{% endif %}
+						{% if linked_person %}
+							<strong><a href="{{ linked_person.url | relative_url }}">{{ speaker.name }}</a></strong>
+						{% elsif speaker.url and speaker.url != "" %}
+							<strong><a href="{{ speaker.url }}" target="_blank" rel="noopener">{{ speaker.name }}</a></strong>
+						{% else %}
+							<strong>{{ speaker.name }}</strong>
+						{% endif %}
+						{% if speaker.affiliation %} &mdash; {{ speaker.affiliation }}{% endif %}
+						{% if speaker.role %} ({{ speaker.role }}){% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+				{% elsif page.speaker %}
+				<h2>Speaker</h2>
+				{% if page.photo %}
+				<img class="speaker-pic" src="{{ page.photo | relative_url }}" align="left" alt="{{ page.speaker }}">
+				{% endif %}
+				<p><strong>{{ page.speaker }}</strong>{% if page.affiliation %} &mdash; {{ page.affiliation }}{% endif %}</p>
+				{% endif %}
+
+				<h2>Details</h2>
+				<ul>
+					<li><strong>Date:</strong> {{ page.date | date: "%A, %B %-d, %Y" }}</li>
+					{% if page.start_time %}
+					<li><strong>Time:</strong> {{ page.start_time }}{% if page.end_time %}&ndash;{{ page.end_time }}{% endif %}{% if page.timezone %} ({{ page.timezone }}){% endif %}</li>
+					{% endif %}
+					{% if page.location %}<li><strong>Location:</strong> {{ page.location }}</li>{% endif %}
+					{% if page.format %}<li><strong>Format:</strong> {{ page.format | replace: "_", " " | capitalize }}{% if page.speaker_mode %} (speaker {{ page.speaker_mode | replace: "_", " " }}){% endif %}</li>{% endif %}
+				</ul>
+
+				{% if page.virtual_url and page.date >= site.time %}
+				<p><a href="{{ page.virtual_url }}" target="_blank" rel="noopener">Join online</a></p>
+				{% endif %}
+
+				{{ content }}
+
+				<p><a href="{{ '/seminar.html' | relative_url }}">&larr; All seminars</a></p>
+
+			</div>
+		</div>
+	</section>
+
+</article>

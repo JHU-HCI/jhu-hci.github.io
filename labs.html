@@ -1,0 +1,44 @@
+---
+layout: default
+title: Labs
+body_class: no-sidebar
+description: "Research labs and centers in the JHU HCI group"
+---
+
+{% assign labs = site.labs | where: "kind", "lab" | sort: "order" %}
+
+<article id="main">
+
+	<section class="wrapper style4 container">
+		<div class="col-8 col-12-narrower">
+			<div class="content">
+
+				{% if labs.size > 0 %}
+				<h2>Research Labs</h2>
+				{% for lab in labs %}
+				<section>
+					<header>
+						<h3><a href="{{ lab.url | relative_url }}">{{ lab.name }}{% if lab.short_name %} ({{ lab.short_name }}){% endif %}</a></h3>
+					</header>
+					<p>{{ lab.description }}</p>
+				</section>
+				{% endfor %}
+				{% endif %}
+
+				{% if site.data.centers.size > 0 %}
+				<h2>Cross-Campus Centers</h2>
+				{% for center in site.data.centers %}
+				<section>
+					<header>
+						<h3><a href="{{ center.website }}" target="_blank" rel="noopener">{{ center.name }}{% if center.short_name %} ({{ center.short_name }}){% endif %}</a></h3>
+					</header>
+					<p>{{ center.description }}</p>
+				</section>
+				{% endfor %}
+				{% endif %}
+
+			</div>
+		</div>
+	</section>
+
+</article>
