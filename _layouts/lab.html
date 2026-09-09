@@ -1,0 +1,62 @@
+---
+layout: default
+body_class: no-sidebar
+---
+
+{% assign pi_people = site.people | where_exp: "p", "page.pis contains p.slug" %}
+
+<article id="main">
+
+	<section class="wrapper style4 container">
+		<div class="col-8 col-12-narrower">
+			<div class="content">
+
+				<header>
+					<h1>{{ page.name }}{% if page.short_name %} <small>({{ page.short_name }})</small>{% endif %}</h1>
+				</header>
+
+				{% if page.description %}<p>{{ page.description }}</p>{% endif %}
+
+				{% if pi_people.size > 0 %}
+				<p><strong>PI{% if pi_people.size > 1 %}s{% endif %}:</strong>
+					{% for person in pi_people %}<a href="{{ person.url | relative_url }}">{{ person.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+				</p>
+				{% endif %}
+
+				{% if page.website %}
+				<p><a href="{{ page.website }}" target="_blank" rel="noopener">Lab website</a></p>
+				{% endif %}
+
+				{% if page.members.size > 0 %}
+				<h2>Members</h2>
+				<ul>
+					{% for member in page.members %}
+					<li>
+						{% assign linked_person = nil %}
+						{% if member.person_slug and member.person_slug != "" %}
+							{% assign linked_person = site.people | where: "slug", member.person_slug | first %}
+						{% endif %}
+						{% if linked_person %}
+							<a href="{{ linked_person.url | relative_url }}">{{ member.name }}</a>
+						{% elsif member.website %}
+							<a href="{{ member.website }}" target="_blank" rel="noopener">{{ member.name }}</a>
+						{% else %}
+							{{ member.name }}
+						{% endif %}
+						{% if member.role %} &mdash; {{ member.role }}{% endif %}
+					</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+
+				{{ content }}
+
+				{% if page.last_verified %}
+				<p><small>Last verified: {{ page.last_verified }}{% if page.member_source %} &mdash; <a href="{{ page.member_source }}" target="_blank" rel="noopener">source</a>{% endif %}</small></p>
+				{% endif %}
+
+			</div>
+		</div>
+	</section>
+
+</article>

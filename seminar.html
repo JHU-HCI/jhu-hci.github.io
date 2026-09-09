@@ -5,47 +5,50 @@ body_class: no-sidebar
 description: "HCI-related seminars and talks at Johns Hopkins University"
 ---
 
+{% assign all_events = site.seminars | sort: "date" | reverse %}
+{% assign talks = all_events %}
+{% assign today = site.time | date: "%Y%m%d" %}
+
 <article id="main">
 
 	<section class="wrapper style4 container">
-		<div class="content">
-			{% assign sorted_years = site.seminars | map: "year" | uniq | sort | reverse %}
-			{% assign shown_latest = "" %}
-			{% for year in sorted_years %}
-			{% assign year_talks = site.seminars | where: "year", year | sort: "date" | reverse %}
-			{% if shown_latest == "" %}
-			<section>
-				<header><h2>{{ year }}</h2></header>
-			</section>
-			{% for talk in year_talks %}
-			<section>
-				<header>
-					<h3>{{ talk.date | date: "%B %-d, %Y" }} &ndash; <strong>{{ talk.speaker }}</strong> &ndash; {{ talk.affiliation }}</h3>
-				</header>
-				{% if talk.photo %}
-				<img class="speaker-pic" src="{{ talk.photo | relative_url }}" align="left" alt="{{ talk.speaker }}">
-				{% endif %}
-				{{ talk.content }}
-			</section>
-			{% endfor %}
-			{% assign shown_latest = "yes" %}
-			{% else %}
-			<details>
-				<summary><h2 style="display:inline">{{ year }}</h2></summary>
-				{% for talk in year_talks %}
-				<section>
-					<header>
-						<h3>{{ talk.date | date: "%B %-d, %Y" }} &ndash; <strong>{{ talk.speaker }}</strong> &ndash; {{ talk.affiliation }}</h3>
-					</header>
-					{% if talk.photo %}
-					<img class="speaker-pic" src="{{ talk.photo | relative_url }}" align="left" alt="{{ talk.speaker }}">
-					{% endif %}
-					{{ talk.content }}
-				</section>
+		<div class="col-8 col-12-narrower">
+			<div class="content">
+
+				{% assign upcoming = "" | split: "" %}
+				{% for event in all_events reversed %}
+					{% assign event_day = event.date | date: "%Y%m%d" %}
+					{% if event_day >= today %}{% assign upcoming = upcoming | push: event %}{% endif %}
 				{% endfor %}
-			</details>
-			{% endif %}
-			{% endfor %}
+
+				{% if upcoming.size > 0 %}
+				<h2>Upcoming</h2>
+				{% include seminar_list.html group=upcoming %}
+				{% endif %}
+
+				<h2>About the Series</h2>
+				<p>The JHU HCI Seminar &mdash; historically known within the community as the
+					<em>HCI Brown Bag</em> &mdash; is our recurring forum for invited talks,
+					works-in-progress, paper clinics, faculty AMAs, and community gatherings.
+					It brings together students, postdocs, and faculty from across Hopkins who
+					work on human-computer interaction and human-centered AI.</p>
+
+				<h2>Past Talks</h2>
+				{% assign talk_years = talks | map: "year" | uniq | sort | reverse %}
+				{% for year in talk_years %}
+				{% assign year_talks = talks | where: "year", year %}
+				{% if forloop.first %}
+				<h3>{{ year }}</h3>
+				{% include seminar_list.html group=year_talks %}
+				{% else %}
+				<details>
+					<summary><h3 style="display:inline">{{ year }}</h3></summary>
+					{% include seminar_list.html group=year_talks %}
+				</details>
+				{% endif %}
+				{% endfor %}
+
+			</div>
 		</div>
 	</section>
 

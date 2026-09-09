@@ -1,0 +1,20 @@
+# Cross-campus centers. These are listed on /labs.html but link straight out to their
+# own websites, so they are data rather than a `_labs` collection entry (no page is
+# generated for them).
+
+- name: Laboratory for Computational Sensing and Robotics
+  short_name: LCSR
+  description: "The LCSR's mission is to create knowledge and foster innovation to further the field of robotics science and engineering. The center's researchers see robotics as an essential link between computation and action that enhances the health, safety, and efficacy of humanity."
+  website: https://lcsr.jhu.edu/
+  last_verified: '2026-09-09'
+
+- name: Malone Center for Engineering in Healthcare
+  description: 'The Malone Center for Engineering in Healthcare brings together engineers, clinicians, and care providers who are leveraging data analytics in novel ways, pioneering new technologies, and applying systems engineering principles to speed the deployment of research-based innovations that will enhance the efficiency, effectiveness, and consistency of healthcare.'
+  website: https://malonecenter.jhu.edu/
+  last_verified: '2026-09-09'
+
+- name: Center for Language and Speech Processing
+  short_name: CLSP
+  description: An interdisciplinary research and educational center focused on the science and technology of language and speech, drawing faculty and students from cognitive science, computer science, electrical and computer engineering, and mathematical sciences.
+  website: https://www.clsp.jhu.edu/
+  last_verified: '2026-09-09'

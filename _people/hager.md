@@ -6,5 +6,5 @@ website: https://www.cs.jhu.edu/~hager/
 picture: hager.jpg
 area: Human Robot Interaction; Augmented, virtual or mixed reality
 section: affiliated
-order: 2
+order: 1
 ---

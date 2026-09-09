@@ -1,0 +1,17 @@
+{%- comment -%}
+Renders a course's instructor list, supporting both schemas:
+  new: `instructors:` — a list of _people slugs, resolved to linked person pages
+  old: `instructor:` / `instructor_slug:` — a display string anchored on /people.html
+Usage: {% include course_instructors.html course=course %}
+{%- endcomment -%}
+{%- assign course = include.course -%}
+<p><strong>Instructor{% if course.instructors.size > 1 or course.instructor contains '&' %}s{% endif %}:</strong>
+	{%- if course.instructors %}
+		{%- for slug in course.instructors %}
+			{%- assign person = site.people | where_exp: "p", "p.slug == slug" | first %}
+			{% if person %}<a href="{{ person.url | relative_url }}">{{ person.name }}</a>{% else %}{{ slug }}{% endif %}{% unless forloop.last %}, {% endunless %}
+		{%- endfor %}
+	{%- elsif course.instructor %}
+		<a href="{{ '/people.html#' | append: course.instructor_slug | relative_url }}">{{ course.instructor }}</a>
+	{%- endif %}
+</p>

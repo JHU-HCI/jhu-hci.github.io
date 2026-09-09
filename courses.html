@@ -22,8 +22,8 @@ description: "HCI-related courses offered at Johns Hopkins University"
 				{% for course in term_courses %}
 				<section>
 					<header>
-						<h3><a href="{{ course.link }}"><strong>{{ course.number }} {{ course.title }}</strong></a></h3>
-						<p><b>Instructor:</b> <a href="{{ '/people.html#' | append: course.instructor_slug | relative_url }}">{{ course.instructor }}</a></p>
+						<h3><a href="{{ course.link | default: course.url | relative_url }}"><strong>{{ course.number }} {{ course.title }}</strong></a></h3>
+						{% include course_instructors.html course=course %}
 					</header>
 					{{ course.content }}
 				</section>
@@ -35,8 +35,8 @@ description: "HCI-related courses offered at Johns Hopkins University"
 					{% for course in term_courses %}
 					<section>
 						<header>
-							<h3><a href="{{ course.link }}"><strong>{{ course.number }} {{ course.title }}</strong></a></h3>
-							<p><b>Instructor:</b> <a href="{{ '/people.html#' | append: course.instructor_slug | relative_url }}">{{ course.instructor }}</a></p>
+							<h3><a href="{{ course.link | default: course.url | relative_url }}"><strong>{{ course.number }} {{ course.title }}</strong></a></h3>
+							{% include course_instructors.html course=course %}
 						</header>
 						{{ course.content }}
 					</section>

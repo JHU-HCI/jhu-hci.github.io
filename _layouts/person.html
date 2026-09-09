@@ -1,0 +1,60 @@
+---
+layout: default
+body_class: no-sidebar
+---
+
+{% assign person_slug = page.slug %}
+{% assign labs_led = site.labs | where_exp: "lab", "lab.pis contains person_slug" %}
+{% assign courses_taught = site.courses | where_exp: "course", "course.instructors contains person_slug" %}
+
+<article id="main">
+
+	<section class="wrapper style4 container">
+		<div class="col-8 col-12-narrower">
+			<div class="content">
+
+				<header>
+					<h1>{{ page.name }}</h1>
+					{% if page.position %}<p><strong>{{ page.position }}</strong></p>{% endif %}
+					{% if page.affiliation %}<p>{{ page.affiliation }}</p>{% endif %}
+				</header>
+
+				{% if page.picture and page.picture != "" %}
+				<img src="{{ '/images/members/' | append: page.picture | relative_url }}" alt="{{ page.name }}" class="photo" style="max-width:200px;">
+				{% elsif page.section == 'trainee' %}
+				<img src="{{ '/images/members/avatar.png' | relative_url }}" alt="{{ page.name }}" class="photo" style="max-width:200px;">
+				{% endif %}
+
+				{% if page.area %}
+				<p><strong>Research areas:</strong> {{ page.area }}</p>
+				{% endif %}
+
+				{% if page.website %}
+				<p><a href="{{ page.website }}" target="_blank" rel="noopener">External profile</a></p>
+				{% endif %}
+
+				{{ content }}
+
+				{% if labs_led.size > 0 %}
+				<h2>Labs</h2>
+				<ul>
+					{% for lab in labs_led %}
+					<li><a href="{{ lab.url | relative_url }}">{{ lab.name }}</a></li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+
+				{% if courses_taught.size > 0 %}
+				<h2>Courses taught</h2>
+				<ul>
+					{% for course in courses_taught %}
+					<li><a href="{{ course.url | relative_url }}">{{ course.number }} &mdash; {{ course.title }}</a> ({{ course.semester }} {{ course.year }})</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+
+			</div>
+		</div>
+	</section>
+
+</article>

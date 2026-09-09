@@ -1,10 +1,11 @@
 ---
 name: Mathias Unberath
-position: Assistant Research Professor
-affiliation: LCSR / Computer Science
+position: John C. Malone Associate Professor
+affiliation: Computer Science
 website: https://mathiasunberath.github.io/
-picture: unberath.png
+picture: unberath.jpg
 area: Human AI interaction; Augmented reality; Visualization; User interface design
-section: affiliated
-order: 9
+section: faculty
+order: 15
+last_verified: "2026-09-09"
 ---
